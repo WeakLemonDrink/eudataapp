@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+    <object model="tenders.contractnotice" pk="1">
+        <field name="added_timestamp" type="DateTimeField">2019-11-26T21:37:18.413554+00:00</field>
+        <field name="ojs_ref" type="CharField">2019/S 156-384676</field>
+        <field name="country" rel="ManyToOneRel" to="tenders.country">178</field>
+        <field name="url" type="CharField">http://ted.europa.eu/udl?uri=TED:NOTICE:384676-2019:TEXT:EN:HTML</field>
+        <field name="title" type="CharField">Produkty lecznicze: antybiotyki w pakiecie II, leki oftalmologiczne i otologiczne w pakiecie IX oraz leki różne w pakiecie X dla apteki szpitalnej w Zespole Opieki Zdrowotnej w Dębicy</field>
+        <field name="short_descr" type="TextField">Produkty lecznicze: antybiotyki w pakiecie II, leki oftalmologiczne i otologiczne w pakiecie IX oraz leki różne w pakiecie X dla apteki szpitalnej w Zespole Opieki Zdrowotnej w Dębicy</field>
+        <field name="contracting_body_name" type="CharField">Zespół Opieki Zdrowotnej w Dębicy</field>
+        <field name="closing_date" type="DateTimeField">2019-08-26T09:42:00+00:00</field>
+        <field name="dispatch_date" type="DateField">2019-08-09</field>
+        <field name="publication_date" type="DateField">2019-08-14</field>
+        <field name="procurement_ref" type="CharField">ZP-PN-49/2019</field>
+        <field name="procurement_docs_url" type="CharField">www.zoz-debica.pl</field>
+        <field name="full_docs_available" type="BooleanField">True</field>
+        <field name="procurement_docs_file" type="FileField"></field>
+    </object>
+    <object model="tenders.lot" pk="1">
+        <field name="added_timestamp" type="DateTimeField">2019-11-26T21:37:18.414881+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">1</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Produkty lecznicze: antybiotyki w pakiecie II dla apteki szpitalnej w Zespole Opieki Zdrowotnej w Dębicy</field>
+        <field name="short_descr" type="TextField">Pakiet II – antybiotyki - poz. 1-2 (według części IX A SIWZ)</field>
+        <field name="info_add" type="TextField">Wadium wynosi: 730,00 PLN.
+Zamawiający przewiduje zastosowanie procedury, o której mowa w art. 24aa ust. 1 ustawy.</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="2">
+        <field name="added_timestamp" type="DateTimeField">2019-11-26T21:37:18.414991+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">2</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Produkty lecznicze: leki oftalmologiczne i otologiczne w pakiecie IX dla apteki szpitalnej w Zespole Opieki Zdrowotnej w Dębicy</field>
+        <field name="short_descr" type="TextField">Pakiet IX – leki oftalomologiczne i otologiczne - poz. 1-55 (według części IX A SIWZ)</field>
+        <field name="info_add" type="TextField">Wadium wynosi: 600,00 PLN.
+Zamawiający przewiduje zastosowanie procedury, o której mowa w art. 24aa ust. 1 ustawy.</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="3">
+        <field name="added_timestamp" type="DateTimeField">2019-11-26T21:37:18.415073+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">3</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Produkty lecznicze: leki różne w pakiecie X dla apteki szpitalnej w Zespole Opieki Zdrowotnej w Dębicy</field>
+        <field name="short_descr" type="TextField">Pakiet X – leki różne - poz. 1-20 (według części IX A SIWZ)</field>
+        <field name="info_add" type="TextField">Wadium wynosi: 460,00 PLN.
+Zamawiający przewiduje zastosowanie procedury, o której mowa w art. 24aa ust. 1 ustawy.</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+</django-objects>

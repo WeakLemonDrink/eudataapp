@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% load bootstrap4 %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h1>{{app.verbose_name}}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p></p>
+        </div>    
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h5 class="card-title">My Dashboard</h5>
+                </div>
+                    <div class="card-body">
+                          <p class="card-text">View matching Contract Notices for your TED Search Terms.</p>
+                </div>
+                <div class="card-footer">                
+                          <a href="{% url 'profiles:dashboard' %}" class="btn btn-primary float-right">My Dashboard</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h5 class="card-title">My TED Search Terms</h5>
+                </div>
+                    <div class="card-body">
+                          <p class="card-text">View search terms and set notification preferences.</p>
+                </div>
+                <div class="card-footer">                
+                          <a href="{% url 'profiles:tedsearchterm-list' %}" class="btn btn-primary float-right">My TED Search Terms</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h5 class="card-title">Add TED Search Terms</h5>
+                </div>
+                    <div class="card-body">
+                          <p class="card-text">Add new search terms to your profile.</p>
+                </div>
+                <div class="card-footer">                
+                          <a href="{% url 'profiles:tedsearchterm-create' %}" class="btn btn-primary float-right">Add TED Search Terms</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

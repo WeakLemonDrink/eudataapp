@@ -1,0 +1,1372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+    <object model="tenders.contractnotice" pk="1">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.690638+00:00</field>
+        <field name="ojs_ref" type="CharField">2018/S 208-474350</field>
+        <field name="country" rel="ManyToOneRel" to="tenders.country">183</field>
+        <field name="url" type="CharField">http://ted.europa.eu/udl?uri=TED:NOTICE:474350-2018:TEXT:EN:HTML</field>
+        <field name="title" type="CharField">Achiziție medicamente</field>
+        <field name="short_descr" type="TextField">Achizitionare de medicamente, conform caietului de sarcini.
+Conform art. 161 din legea 98/2016 termenul pt. raspunsul la clarificari este in a 10-a zi inainte de data limita de depundere a ofertelor.
+Numarul zilelor pana la care se pot solicita clarificari inainte de data limita de depunere a ofertelor/candidaturilor: 13 zile.</field>
+        <field name="contracting_body_name" type="CharField">Spitalul Clinic „Dr. I. Cantacuzino”</field>
+        <field name="closing_date" type="DateTimeField">2018-12-03T14:42:00+00:00</field>
+        <field name="dispatch_date" type="DateField">2018-10-25</field>
+        <field name="publication_date" type="DateField">2018-10-27</field>
+        <field name="procurement_ref" type="CharField">16743/10.10.2018</field>
+        <field name="procurement_docs_url" type="CharField">www.e-licitatie.ro</field>
+        <field name="full_docs_available" type="BooleanField">True</field>
+        <field name="procurement_docs_file" type="FileField"></field>
+    </object>
+    <object model="tenders.lot" pk="1">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.707521+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">43</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Fluconazolum flac sol.perf. 2mg/ml-50ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 480 cant max/ac= 1600</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 4,348.80</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="2">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.707678+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">36</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Terlipressinum flac pulb.+solv.pt.sol.inj. 1mg/ml-5ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 720 cant max/ac= 2400</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 66,208.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="3">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.707770+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">4</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Drotaverinum fi sol.inj. 40mg/2ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 19200 cant max/ac= 28800
+15168.00</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 7,584.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="4">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.707855+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">18</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Nadroparinum ser. preumpl sol.inj. 3800ui / 0,4ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 24000 cant max/ac= 48000</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 96,288.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="5">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.707940+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">19</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Nadroparinum ser. preumpl sol.inj. 5700ui / 0.6ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 12000 cant max/ac= 33600</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 107,232.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="6">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.708023+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">20</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Sulodexinum fi sol inj. 600uls/2ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 1200 cant max/ac= 2400</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 5,216.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="7">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.708105+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">58</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Combinatii: diclofenac sodic + citrat de orfenadrină flac sol.perf. 0.30 mg + 0.12 mg/ml -250ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 1200 cant max/ac= 3600</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 14,880.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="8">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.708187+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">16</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Enoxaparinum ser. preumpl sol.inj. 60 mg / 0.6ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 1200 cant max/ac= 4800</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 20,480.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="9">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.708268+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">12</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Combinatii: vitamine hidrosolubile;supliment pt.nutritia parenterala- adulti si copii -flac pulb. pt. sol. perf.</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 240 cant max/ac= 1200</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 882.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="10">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.708350+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">48</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Cyclophosphamidum flac pulb. pt. sol. inj. / perf. 200 mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 480 cant max/ac= 1440</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 5,942.40</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="11">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.708431+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">13</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Combinatii: vitamine liposolubile;supliment pt.nutritia parenterala- copii pana la 11 ani fi conc.pt.emulsie perf. 10 ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 240 cant max/ac= 1200</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 619.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="12">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.708511+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">60</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Lorazepamum compr. 1 mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 240 cant max/ac= 2400</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 60.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="13">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.708592+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">11</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Insulina umana cu actiune rapida cartus sol. inj. 100 ui/ml - 3 ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 1200 cant max/ac= 4000</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 21,420.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="14">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.708673+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">7</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Ondansetronum fi sol. inj. 2mg/ml-4ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 2400 cant max/ac= 7200 17544.00</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 17,544.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="15">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.708754+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">26</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Spironolactonum compr/caps 25 mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 4800 cant max/ac= 9600</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 928.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="16">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.708835+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">9</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Lactulosum flac lichid oral 100 ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 240 cant max/ac= 1680 1080.00</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 2,250.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="17">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.708917+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">21</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Fibrinogen uman flac pulb. pt. sol. inj/perf 1 g</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 2 cant max/ac= 16</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 7,103.80</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="18">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.708999+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">3</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Pantoprazolum flac pulb.pt.sol.inj. 40 mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 4800 cant max/ac= 14400</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 50,736.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="19">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.709080+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">50</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Bupivacainum fi sol.inj.5mg/ml - 4ml sp.heavy</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 3600 cant max/ac= 6000</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 26,780.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="20">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.709161+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">51</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Fentanylum fi sol.inj. 50mcg/ml - 5ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 7200 cant max/ac= 16800</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 10,808.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="21">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.709242+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">55</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Etomidatum fi emulsie inj. 2mg/ml-10ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 240 cant max/ac= 2000</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 2,100.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="22">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.709322+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">15</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Enoxaparinum ser. preumpl sol.inj. 40 mg / 0.4ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 1200 cant max/ac= 4800</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 15,376.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="23">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.709406+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">31</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Combinatii: clorhidrat de lidocaina + clorhexidina ser. preumpl seringa unidoza 12.5 g gel uretral</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 960 cant max/ac= 1440</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 2,515.20</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="24">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.709487+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">27</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Urapidilum sol.inj. 25mg/5ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 720 cant max/ac= 4800</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 6,984.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="25">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.709568+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">56</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Combinatii: paracetamol+ tramadol cp compr. 325 mg+ 37,5 mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 7200 cant max/ac= 14400</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 2,304.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="26">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.709649+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">35</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Progesteronum caps.moi 200 mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 720 cant max/ac= 2880</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 950.40</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="27">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.709731+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">8</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Lactulosum flac lichid oral 200 ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 240 cant max/ac= 1680</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 4,692.80</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="28">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.709812+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">45</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Voriconazolum fl pulb. pt. sol. perf. 200mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 48 cant max/ac= 96</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 14,048.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="29">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.709894+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">6</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Ondansetronum fi sol. inj. 2mg/ml-2ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 2400 cant max/ac= 12000 9240.00</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 15,400.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="30">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.709979+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">67</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Gelatinum flac/ punga sol.perf. gelatina succinilata modificata in solutie electrolitica (clorura de sodiu, clorura de Mg hexahidrat, clorura de potasiu s.a) -500 ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 480 cant max/ac= 2400</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 21,056.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="31">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.710066+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">63</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Acetylcysteinum fi sol.inj./inhal.nebuliz. 300mg/3ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 2400 cant max/ac= 6000</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 4,000.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="32">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.710148+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">68</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Mannitolum flac sol. perf. 15 %- 250 ml</field>
+        <field name="short_descr" type="TextField">68 cant min/ac= 240 cant max/ac= 1200</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 1,864.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="33">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.710231+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">66</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Solutie aminoacizi hepa flac sol.perf. 10 % - 500ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 480 cant max/ac= 1500</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 11,508.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="34">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.710313+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">69</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Mannitolum punga sol. perf. 20 %- 250ml</field>
+        <field name="short_descr" type="TextField">69 cant min/ac= 240 cant max/ac= 1200</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 2,428.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="35">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.710395+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">71</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Kalii chloridum fi conc.pt. sol.perf. 74.56mg/ml – 20ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 1200 cant max/ac= 2400</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 744.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="36">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.710476+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">65</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Combinatii: sol.aminoacizi, emulsie lipidica, glucoza si electroliti punga emulsie perf.cu adm.printr-o vena perif, punga tricamerala 1800ml - 2000ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 480 cant max/ac= 1680</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 63,840.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="37">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.710557+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">61</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Albumina umana fl sol.perf. 200g/l - 100 ml</field>
+        <field name="short_descr" type="TextField">61 cant min/ac= 120 cant max/ac= 600</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 33,430.40</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="38">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.710639+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">70</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Magnesii sulfas fi sol.inj. 250mg/ml - 5ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 240 cant max/ac= 1200</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 432.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="39">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.710721+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">73</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Apa pentru preparate injectabile fi solvent pt uz parenteral - 10 ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 480 cant max/ac= 5000</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 4,000.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="40">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.710803+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">74</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Methyltionini cloridum fi sol.inj. 5mg/ml-10 ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 120 cant max/ac= 360</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 21,499.20</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="41">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.710885+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">62</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Aminophyllinum compr/cps.100mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 2400 cant max/ac= 4800</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 320.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="42">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.710967+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">64</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Metronidazolum compr.film. 250 mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 2400 cant max/ac= 4800</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 416.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="43">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.711050+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">75</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Hidrolizat din proteină din creier de porcină fi sol.inj. 215.2mg/ml - 10 ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 240 cant max/ac= 2400</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 8,480.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="44">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.711135+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">72</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Comb: sol.aminoacizi, glucoza, emulsie lipidica cu continut de trigliceride ale ac.omega 3 si electroliti punga emulsie perf. cu adm. pe cale venoasa centrala- punga tricamerala 625 ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 120 cant max/ac= 1200</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 38,400.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="45">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.711218+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">17</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Fondaparinux sodium ser. preumpl sol.inj. in seringa pre. 7.5mg/0.6ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 240 cant max/ac= 1200</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 20,800.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="46">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.711333+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">29</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Lercanidipinum compr. 10 mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 480 cant max/ac= 3000</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 494.08</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="47">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.711415+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">32</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Sildenafilum cp compr.fillm. 25 mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 12 cant max/ac= 96</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 528.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="48">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.711497+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">1</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Albuminum - flac sol.perf. 200g/l - 50 ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 4800 cant max/ac= 15000</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 440,000.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="49">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.711579+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">2</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Pantoprazolum cp compr.gastrorez. 20 mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 14400 cant max/ac= 28800</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. =4,800.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="50">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.711660+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">14</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Acenocumarolum compr. 2mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 480 cant max/ac= 2400</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 200.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="51">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.711741+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">33</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Ketorolacum tromethamin compr.film. 10 mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 2400 cant max/ac= 4800</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 416.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="52">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.711823+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">34</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Misoprostolum sist. sist.cu cedare vag. 200 mcg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 12 cant max/ac= 48</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 8,288.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="53">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.711905+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">40</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Anidulafunginum flac pulb.pt.conc. pt sol perf 100mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 24 cant max/ac= 60</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 23,185.28</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="54">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.711987+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">37</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Betamethasonum fi susp.inj. 7mg/ml - 1ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 1200 cant max/ac= 3600</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 4,764.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="55">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.712068+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">30</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Sildenafilum compr.film 100 mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 12 cant max/ac= 96</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 312.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="56">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.712149+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">41</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Caspofunginum flac pulb. pt. conc. pt. sol. perf. 70mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 24 cant max/ac= 48</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 17,680.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="57">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.712246+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">39</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Benzylpenicillinum flac pulb.pt.sol.inj.1000000 u.i. GK</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 2400 cant max/ac= 6000</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 8,280.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="58">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.712410+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">28</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Lercanidipinum compr. 20 mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 240 cant max/ac= 2000</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 483.52</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="59">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.712536+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">57</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Paracetamolum sup supoz. 125mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 1440 cant max/ac= 2880 1224.00</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 816.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="60">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.712621+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">59</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Phenobarbitalum compr. 100mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 2400 cant max/ac= 6000</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 360.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="61">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.712702+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">44</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Fluconazolum flac sol.perf. 2mg/ml-200ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 48 cant max/ac= 120</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 1,450.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="62">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.712783+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">38</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Ampicillinum flac pulb.pt.sol.inj. 1g</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 4800 cant max/ac= 9600</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 8,000.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="63">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.717074+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">23</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Nitroglycerinum fi sol. perf 1 mg/ml-10 ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 1200 cant max/ac= 2400</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 5,360.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="64">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.717199+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">24</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Digoxinum compr. 0,25 mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 1200 cant max/ac= 2400</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 120.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="65">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.717279+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">25</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Methyldopum compr.250mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 4800 cant max/ac= 12000</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 1,640.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="66">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.717355+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">49</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Methotrexatum ser. preumpl sol.inj. 10mg/ml - 1ml</field>
+        <field name="short_descr" type="TextField">49 cant min/ac= 240 cant max/ac= 600 12000.00</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 8,000.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="67">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.717430+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">52</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Lidocainum flac 10 % spray, sol.lidocaina</field>
+        <field name="short_descr" type="TextField">52 cant min/ac= 120 cant max/ac= 360</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 2,212.80</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="68">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.717505+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">53</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Rocuronii bromidum flac sol.inj 10 mg/ml -10 ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 120 cant max/ac= 1200</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 6,388.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="69">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.717579+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">5</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Ondansetronum compr.filmate 4 mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 1200 cant max/ac= 4800</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 2,464.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="70">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.717653+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">47</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Oseltamivir caps 75 mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 240 cant max/ac= 1920</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 4,076.80</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="71">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.717727+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">10</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Insulina umana cu actiune rapida -flac sol.inj. 100ui/ml - 10ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 480 cant max/ac= 1200</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 9,124.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="72">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.717802+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">46</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Fluconazolum flac sol.perf. 2mg/ml-100ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 480 cant max/ac= 960</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 5,801.60</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="73">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.717877+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">22</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Alprostadilum fi conc. pt. sol. perf. 20 mcg/ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 120 cant max/ac= 1500</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 4,513.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="74">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.717951+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">54</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Ropivacainum fi sol.inj. 10 mg/ml - 20ml</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 1200 cant max/ac= 2400</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 8,488.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="75">
+        <field name="added_timestamp" type="DateTimeField">2019-11-27T13:35:32.718025+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">42</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Caspofunginum flac pulb. pt. conc. pt. sol. perf. 50mg</field>
+        <field name="short_descr" type="TextField">Cant min/ac= 48 cant max/ac= 96</field>
+        <field name="info_add" type="TextField">Val estim pt cel mai mare c.s. 27,328.00</field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+</django-objects>

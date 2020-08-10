@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% load bootstrap4 %}
+{% load humanize %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h1>Tenders Application / Contract Notice {{contract_notice.id}} / Edit Lot Units</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>Provides a list of all Lots for a Contract Notice, and form fields to upload a reference file and add details of number of units per Lot. Use the form below to pick a <b>{{contract_notice_form.procurement_docs_file.label}}</b> and enter <b>Number of Units</b> per lot, and click <b>Submit</b> to upload the data.</p>
+        </div>
+    </div>
+    <form enctype="multipart/form-data" class="form-horizontal" action="{{request.path}}" method="post">
+        {% csrf_token %}
+        {% bootstrap_form_errors contract_notice_form %}
+        <dl class="row">
+            <dt class="col-sm-2">Dispatch Date</dt>
+            <dd class="col-sm-2">{{contract_notice.dispatch_date|date:"SHORT_DATE_FORMAT"}}</dd>
+            <dt class="col-sm-2">Publication Date</dt>
+            <dd class="col-sm-2">{{contract_notice.publication_date|date:"SHORT_DATE_FORMAT"}}</dd>
+            <dt class="col-sm-2">Total Value</dt>
+            <dd class="col-sm-2">{{contract_notice.value_of_procurement|intcomma}} {{contract_notice.currency.iso_code}}</dd>
+            <dt class="col-sm-2">OJS Reference</dt>
+            <dd class="col-sm-2"><a href={{contract_notice.url}} target="_blank">{{contract_notice.ojs_ref}}</a></dd>
+            <dt class="col-sm-2">Title</dt>
+            <dd class="col-sm-6">{{contract_notice.title}}</dd>
+            <dt class="col-sm-2">Country</dt>
+            <dd class="col-sm-2">{{contract_notice.country}}</dd>
+            <dt class="col-sm-2">Contracting Body</dt>
+            <dd class="col-sm-6">{{contract_notice.contracting_body_name}}</dd>
+            <dt class="col-sm-2">Procurement Documents Location</dt>
+            <dd class="col-sm-2">{% if contract_notice.procurement_docs_url|length >= 22 %}<a href="{{contract_notice.procurement_docs_url}}" data-toggle="tooltip" title="{{contract_notice.procurement_docs_url}}">{% else %}<a href="{{contract_notice.procurement_docs_url}}">{% endif %}{{contract_notice.procurement_docs_url|truncatechars:22}}</a></dd>
+            <dt class="col-sm-2">Procurement Reference</dt>
+            <dd class="col-sm-2">{{contract_notice.procurement_ref|default:"-"}}</a></dd>
+            <dt class="col-sm-2">Full docs available?</dt>
+            <dd class="col-sm-2">{{contract_notice.full_docs_available|yesno:"Yes,No"}}</a></dd>
+            <dt class="col-sm-2"></dt>
+            <dt class="col-sm-2"></dt>
+            <dt class="col-sm-2">{{contract_notice_form.procurement_docs_file.label}}</dt>
+            <dd class="col-sm-6">{% bootstrap_field contract_notice_form.procurement_docs_file show_label=False %}</dd>
+        </dl>
+        {% if lot_formset.forms %}
+        {{lot_formset.management_form}}
+        <div class="table-container">
+            <table class="table table-sm">
+                <thead class="thead-default">
+                    <tr>
+                        <th>Lot No.</th>
+                        <th>Title</th>
+                        <th>Awarded Contract</th>
+                        <th>Contractor</th>
+                        <th>Value</th>                       
+                        <th>Number of Units</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for form in lot_formset %}
+                    {% for hidden in form.hidden_fields %}
+                        {{hidden}}
+                    {% endfor %}
+                    <tr scope="row" class="{% cycle 'even' 'odd' %}">
+                        <td>{{form.instance.lot_no}}</td>
+                        <td>{{form.instance.title}}</td>
+                        <td>{{form.instance.awarded_contract|yesno:"Yes,No"}}</td>
+                        <td>{{form.instance.contractor_name|default_if_none:"—"}}</td>
+                        <td>{% if form.instance.value %}{{form.instance.value|intcomma}} {{form.instance.currency.iso_code}}{% else %}—{% endif %}</td>
+                        <td>{% bootstrap_field form.number_of_units show_label=False %}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <div class="row">
+            <div class="col">
+                <p>No lots are associated with this contract notice.</p>
+            </div>
+        </div>
+        {% endif %}
+        <div class="row pb-2">
+            <div class="col">
+                <div class="btn-group float-right" role="group" aria-label="List View Controls">
+                    {% bootstrap_button href="javascript:history.go(-1)" content="Back" button_type="link" button_class="btn btn-outline-primary" %}
+                    {% bootstrap_button button_class="btn btn-outline-primary" button_type="submit" content="Submit" %}
+                </div>
+            </div>
+        </div>
+    </form>      
+</div>    
+{% endblock content %}

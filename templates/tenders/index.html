@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% load bootstrap4 %}
+{% load humanize %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h1>{{app.verbose_name}}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>The database currently contains <b>{{total_contract_notice|intcomma}}</b> Contract Notices, <b>{{total_contract_award_notice|intcomma}}</b> Contract Award Notices and <b>{{total_lots|intcomma}}</b> Lots.</p>
+            {% if latest_status %}
+            <p>The latest daily package download happened on <b>{{latest_status.added|date:"l jS F"}}</b> at <b>{{latest_status.added|date:"P"}}</b></p>
+            {% endif %}
+        </div>    
+    </div>
+    <div class="row">
+		<div class="col-sm-3">
+    		<div class="card h-100">
+                <div class="card-header">
+                    <h5 class="card-title">Contract Notice</h5>
+                </div>
+          			<div class="card-body">
+            			  <p class="card-text">View all Contract Notice data in a table.</p>
+                </div>
+                <div class="card-footer">                
+            			  <a href="{% url 'tenders:contractnotice-list' %}" class="btn btn-primary float-right">Contract Notices</a>
+                </div>
+    		</div>
+  		</div>
+        <div class="col-sm-3">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h5 class="card-title">Contract Award Notice</h5>
+                </div>
+                    <div class="card-body">
+                          <p class="card-text">View all Contract Award Notice data in a table.</p>
+                </div>
+                <div class="card-footer">                
+                          <a href="{% url 'tenders:contractawardnotice-list' %}" class="btn btn-primary float-right">Contract Award Notices</a>
+                </div>
+            </div>
+        </div>       
+		<div class="col-sm-3">
+    		<div class="card h-100">
+            <div class="card-header">
+                <h5 class="card-title">Lot</h5>
+            </div>
+      			<div class="card-body">
+        			  <p class="card-text">View all Lot data in a table.</p>
+      			</div>
+            <div class="card-footer">                
+                <a href="{% url 'tenders:lot-list' %}" class="btn btn-primary float-right">Lots</a>
+            </div>
+    		</div>
+  		</div>
+  		<div class="col-sm-3">
+    		<div class="card h-100">
+            <div class="card-header">
+                <h5 class="card-title">Upload Single Tender</h5>
+            </div>
+      			<div class="card-body">
+        			  <p class="card-text">Upload single TED export Contract Notice or Contract Award Notice xml file.</p>
+            </div>
+            <div class="card-footer">                
+        			  <a href="{% url 'tenders:tender-create' %}" class="btn btn-primary float-right">Single Tender</a>
+      			</div>
+    		</div>
+  		</div>
+    </div>
+    <div class="row pt-2 pb-2">     
+      <div class="col-sm-3">
+        <div class="card h-100">
+            <div class="card-header">
+                <h5 class="card-title">Upload Bulk Tenders</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Download and process daily package files from the TED ftp server.</p>
+            </div>
+            <div class="card-footer">
+                <a href="{% url 'tenders:tender-bulk-create' %}" class="btn btn-primary float-right">Bulk Tenders</a>
+            </div>
+        </div>
+      </div>
+    </div>    
+</div>
+{% endblock content %}

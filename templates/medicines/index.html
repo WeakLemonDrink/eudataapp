@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% load bootstrap4 %}
+{% load humanize %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h1>{{app.verbose_name}}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>The database currently contains <b>{{total_presentation|intcomma}}</b> BNF Presentations, <b>{{total_product|intcomma}}</b> BNF Products and <b>{{total_chem_substance|intcomma}}</b> BNF Chemical Substances.</p>
+        </div>    
+    </div>
+    <div class="row">
+		<div class="col-sm-3">
+    		<div class="card h-100">
+                <div class="card-header">
+                    <h5 class="card-title">BNF Presentation</h5>
+                </div>
+          			<div class="card-body">
+            			  <p class="card-text">View all BNF Presentation data in a table and analyse pricing data.</p>
+                </div>
+                <div class="card-footer">                
+            			  <a href="{% url 'medicines:bnfpresentation-list' %}" class="btn btn-primary float-right">BNF Presentations</a>
+                </div>
+    		</div>
+  		</div>
+    </div>
+</div>
+{% endblock content %}

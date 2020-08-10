@@ -1,0 +1,18 @@
+{% load tenders_tags %}
+
+<div class="btn-group">
+  <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+  <div class="dropdown-menu">
+  		{% if record.contractawardnotice_set.exists %}
+		<a class="dropdown-item" href="{% contract_award_notice_list_filter record %}">
+		{% else %}
+		<a class="dropdown-item disabled" href="#">
+		{% endif %}
+		View Contract Award Notice(s)</a>
+		<a class="dropdown-item" href="{% url 'tenders:lot-list' %}?contract_notice={{record.id}}">View Lots</a>
+		<a class="dropdown-item" href="{% url 'tenders:contractnotice-edit-lot-units' record.id %}">Edit Lot Units</a>
+		{% if record.contract_notice_file %}
+		<a class="dropdown-item" href="{{record.contract_notice_file.url}}">Contract Notice File</a>
+		{% endif %}		
+  </div>
+</div>

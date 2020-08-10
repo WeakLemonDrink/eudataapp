@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+    <object model="tenders.currency" pk="1">
+        <field name="iso_code" type="CharField">AFN</field>
+        <field name="currency_name" type="CharField">Afghani</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="2">
+        <field name="iso_code" type="CharField">EUR</field>
+        <field name="currency_name" type="CharField">Euro</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="3">
+        <field name="iso_code" type="CharField">ALL</field>
+        <field name="currency_name" type="CharField">Lek</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="4">
+        <field name="iso_code" type="CharField">DZD</field>
+        <field name="currency_name" type="CharField">Algerian Dinar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="5">
+        <field name="iso_code" type="CharField">USD</field>
+        <field name="currency_name" type="CharField">US Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="6">
+        <field name="iso_code" type="CharField">AOA</field>
+        <field name="currency_name" type="CharField">Kwanza</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="7">
+        <field name="iso_code" type="CharField">XCD</field>
+        <field name="currency_name" type="CharField">East Caribbean Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="8">
+        <field name="iso_code" type="CharField"></field>
+        <field name="currency_name" type="CharField">No universal currency</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="9">
+        <field name="iso_code" type="CharField">ARS</field>
+        <field name="currency_name" type="CharField">Argentine Peso</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="10">
+        <field name="iso_code" type="CharField">AMD</field>
+        <field name="currency_name" type="CharField">Armenian Dram</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="11">
+        <field name="iso_code" type="CharField">AWG</field>
+        <field name="currency_name" type="CharField">Aruban Florin</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="12">
+        <field name="iso_code" type="CharField">AUD</field>
+        <field name="currency_name" type="CharField">Australian Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="13">
+        <field name="iso_code" type="CharField">AZN</field>
+        <field name="currency_name" type="CharField">Azerbaijan Manat</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="14">
+        <field name="iso_code" type="CharField">BSD</field>
+        <field name="currency_name" type="CharField">Bahamian Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="15">
+        <field name="iso_code" type="CharField">BHD</field>
+        <field name="currency_name" type="CharField">Bahraini Dinar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="16">
+        <field name="iso_code" type="CharField">BDT</field>
+        <field name="currency_name" type="CharField">Taka</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="17">
+        <field name="iso_code" type="CharField">BBD</field>
+        <field name="currency_name" type="CharField">Barbados Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="18">
+        <field name="iso_code" type="CharField">BYN</field>
+        <field name="currency_name" type="CharField">Belarusian Ruble</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="19">
+        <field name="iso_code" type="CharField">BZD</field>
+        <field name="currency_name" type="CharField">Belize Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="20">
+        <field name="iso_code" type="CharField">XOF</field>
+        <field name="currency_name" type="CharField">CFA Franc BCEAO</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="21">
+        <field name="iso_code" type="CharField">BMD</field>
+        <field name="currency_name" type="CharField">Bermudian Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="22">
+        <field name="iso_code" type="CharField">INR</field>
+        <field name="currency_name" type="CharField">Indian Rupee</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="23">
+        <field name="iso_code" type="CharField">BTN</field>
+        <field name="currency_name" type="CharField">Ngultrum</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="24">
+        <field name="iso_code" type="CharField">BOB</field>
+        <field name="currency_name" type="CharField">Boliviano</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="25">
+        <field name="iso_code" type="CharField">BOV</field>
+        <field name="currency_name" type="CharField">Mvdol</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="27">
+        <field name="iso_code" type="CharField">BAM</field>
+        <field name="currency_name" type="CharField">Convertible Mark</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="28">
+        <field name="iso_code" type="CharField">BWP</field>
+        <field name="currency_name" type="CharField">Pula</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="29">
+        <field name="iso_code" type="CharField">NOK</field>
+        <field name="currency_name" type="CharField">Norwegian Krone</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="30">
+        <field name="iso_code" type="CharField">BRL</field>
+        <field name="currency_name" type="CharField">Brazilian Real</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="31">
+        <field name="iso_code" type="CharField">BND</field>
+        <field name="currency_name" type="CharField">Brunei Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="32">
+        <field name="iso_code" type="CharField">BGN</field>
+        <field name="currency_name" type="CharField">Bulgarian Lev</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="33">
+        <field name="iso_code" type="CharField">BIF</field>
+        <field name="currency_name" type="CharField">Burundi Franc</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="34">
+        <field name="iso_code" type="CharField">CVE</field>
+        <field name="currency_name" type="CharField">Cabo Verde Escudo</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="35">
+        <field name="iso_code" type="CharField">KHR</field>
+        <field name="currency_name" type="CharField">Riel</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="36">
+        <field name="iso_code" type="CharField">XAF</field>
+        <field name="currency_name" type="CharField">CFA Franc BEAC</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="37">
+        <field name="iso_code" type="CharField">CAD</field>
+        <field name="currency_name" type="CharField">Canadian Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="38">
+        <field name="iso_code" type="CharField">KYD</field>
+        <field name="currency_name" type="CharField">Cayman Islands Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="39">
+        <field name="iso_code" type="CharField">CLP</field>
+        <field name="currency_name" type="CharField">Chilean Peso</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="40">
+        <field name="iso_code" type="CharField">CLF</field>
+        <field name="currency_name" type="CharField">Unidad de Fomento</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="41">
+        <field name="iso_code" type="CharField">CNY</field>
+        <field name="currency_name" type="CharField">Yuan Renminbi</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="42">
+        <field name="iso_code" type="CharField">COP</field>
+        <field name="currency_name" type="CharField">Colombian Peso</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="43">
+        <field name="iso_code" type="CharField">COU</field>
+        <field name="currency_name" type="CharField">Unidad de Valor Real</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="44">
+        <field name="iso_code" type="CharField">KMF</field>
+        <field name="currency_name" type="CharField">Comorian Franc</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="45">
+        <field name="iso_code" type="CharField">CDF</field>
+        <field name="currency_name" type="CharField">Congolese Franc</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="46">
+        <field name="iso_code" type="CharField">NZD</field>
+        <field name="currency_name" type="CharField">New Zealand Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="47">
+        <field name="iso_code" type="CharField">CRC</field>
+        <field name="currency_name" type="CharField">Costa Rican Colon</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="48">
+        <field name="iso_code" type="CharField">HRK</field>
+        <field name="currency_name" type="CharField">Kuna</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="49">
+        <field name="iso_code" type="CharField">CUP</field>
+        <field name="currency_name" type="CharField">Cuban Peso</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="50">
+        <field name="iso_code" type="CharField">CUC</field>
+        <field name="currency_name" type="CharField">Peso Convertible</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="51">
+        <field name="iso_code" type="CharField">ANG</field>
+        <field name="currency_name" type="CharField">Netherlands Antillean Guilder</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="52">
+        <field name="iso_code" type="CharField">CZK</field>
+        <field name="currency_name" type="CharField">Czech Koruna</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="53">
+        <field name="iso_code" type="CharField">DKK</field>
+        <field name="currency_name" type="CharField">Danish Krone</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="54">
+        <field name="iso_code" type="CharField">DJF</field>
+        <field name="currency_name" type="CharField">Djibouti Franc</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="55">
+        <field name="iso_code" type="CharField">DOP</field>
+        <field name="currency_name" type="CharField">Dominican Peso</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="56">
+        <field name="iso_code" type="CharField">EGP</field>
+        <field name="currency_name" type="CharField">Egyptian Pound</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="57">
+        <field name="iso_code" type="CharField">SVC</field>
+        <field name="currency_name" type="CharField">El Salvador Colon</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="58">
+        <field name="iso_code" type="CharField">ERN</field>
+        <field name="currency_name" type="CharField">Nakfa</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="59">
+        <field name="iso_code" type="CharField">ETB</field>
+        <field name="currency_name" type="CharField">Ethiopian Birr</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="60">
+        <field name="iso_code" type="CharField">FKP</field>
+        <field name="currency_name" type="CharField">Falkland Islands Pound</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="61">
+        <field name="iso_code" type="CharField">FJD</field>
+        <field name="currency_name" type="CharField">Fiji Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="62">
+        <field name="iso_code" type="CharField">XPF</field>
+        <field name="currency_name" type="CharField">CFP Franc</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="63">
+        <field name="iso_code" type="CharField">GMD</field>
+        <field name="currency_name" type="CharField">Dalasi</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="64">
+        <field name="iso_code" type="CharField">GEL</field>
+        <field name="currency_name" type="CharField">Lari</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="65">
+        <field name="iso_code" type="CharField">GHS</field>
+        <field name="currency_name" type="CharField">Ghana Cedi</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="66">
+        <field name="iso_code" type="CharField">GIP</field>
+        <field name="currency_name" type="CharField">Gibraltar Pound</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="67">
+        <field name="iso_code" type="CharField">GTQ</field>
+        <field name="currency_name" type="CharField">Quetzal</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="68">
+        <field name="iso_code" type="CharField">GBP</field>
+        <field name="currency_name" type="CharField">Pound Sterling</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="69">
+        <field name="iso_code" type="CharField">GNF</field>
+        <field name="currency_name" type="CharField">Guinean Franc</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="70">
+        <field name="iso_code" type="CharField">GYD</field>
+        <field name="currency_name" type="CharField">Guyana Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="71">
+        <field name="iso_code" type="CharField">HTG</field>
+        <field name="currency_name" type="CharField">Gourde</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="72">
+        <field name="iso_code" type="CharField">HNL</field>
+        <field name="currency_name" type="CharField">Lempira</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="73">
+        <field name="iso_code" type="CharField">HKD</field>
+        <field name="currency_name" type="CharField">Hong Kong Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="74">
+        <field name="iso_code" type="CharField">HUF</field>
+        <field name="currency_name" type="CharField">Forint</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="75">
+        <field name="iso_code" type="CharField">ISK</field>
+        <field name="currency_name" type="CharField">Iceland Krona</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="76">
+        <field name="iso_code" type="CharField">IDR</field>
+        <field name="currency_name" type="CharField">Rupiah</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="77">
+        <field name="iso_code" type="CharField">XDR</field>
+        <field name="currency_name" type="CharField">SDR (Special Drawing Right)</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="78">
+        <field name="iso_code" type="CharField">IRR</field>
+        <field name="currency_name" type="CharField">Iranian Rial</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="79">
+        <field name="iso_code" type="CharField">IQD</field>
+        <field name="currency_name" type="CharField">Iraqi Dinar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="80">
+        <field name="iso_code" type="CharField">ILS</field>
+        <field name="currency_name" type="CharField">New Israeli Sheqel</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="81">
+        <field name="iso_code" type="CharField">JMD</field>
+        <field name="currency_name" type="CharField">Jamaican Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="82">
+        <field name="iso_code" type="CharField">JPY</field>
+        <field name="currency_name" type="CharField">Yen</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="83">
+        <field name="iso_code" type="CharField">JOD</field>
+        <field name="currency_name" type="CharField">Jordanian Dinar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="84">
+        <field name="iso_code" type="CharField">KZT</field>
+        <field name="currency_name" type="CharField">Tenge</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="85">
+        <field name="iso_code" type="CharField">KES</field>
+        <field name="currency_name" type="CharField">Kenyan Shilling</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="86">
+        <field name="iso_code" type="CharField">KPW</field>
+        <field name="currency_name" type="CharField">North Korean Won</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="87">
+        <field name="iso_code" type="CharField">KRW</field>
+        <field name="currency_name" type="CharField">Won</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="88">
+        <field name="iso_code" type="CharField">KWD</field>
+        <field name="currency_name" type="CharField">Kuwaiti Dinar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="89">
+        <field name="iso_code" type="CharField">KGS</field>
+        <field name="currency_name" type="CharField">Som</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="90">
+        <field name="iso_code" type="CharField">LAK</field>
+        <field name="currency_name" type="CharField">Lao Kip</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="91">
+        <field name="iso_code" type="CharField">LBP</field>
+        <field name="currency_name" type="CharField">Lebanese Pound</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="92">
+        <field name="iso_code" type="CharField">LSL</field>
+        <field name="currency_name" type="CharField">Loti</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="93">
+        <field name="iso_code" type="CharField">ZAR</field>
+        <field name="currency_name" type="CharField">Rand</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="94">
+        <field name="iso_code" type="CharField">LRD</field>
+        <field name="currency_name" type="CharField">Liberian Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="95">
+        <field name="iso_code" type="CharField">LYD</field>
+        <field name="currency_name" type="CharField">Libyan Dinar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="96">
+        <field name="iso_code" type="CharField">CHF</field>
+        <field name="currency_name" type="CharField">Swiss Franc</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="97">
+        <field name="iso_code" type="CharField">MOP</field>
+        <field name="currency_name" type="CharField">Pataca</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="98">
+        <field name="iso_code" type="CharField">MKD</field>
+        <field name="currency_name" type="CharField">Denar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="99">
+        <field name="iso_code" type="CharField">MGA</field>
+        <field name="currency_name" type="CharField">Malagasy Ariary</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="100">
+        <field name="iso_code" type="CharField">MWK</field>
+        <field name="currency_name" type="CharField">Malawi Kwacha</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="101">
+        <field name="iso_code" type="CharField">MYR</field>
+        <field name="currency_name" type="CharField">Malaysian Ringgit</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="102">
+        <field name="iso_code" type="CharField">MVR</field>
+        <field name="currency_name" type="CharField">Rufiyaa</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="103">
+        <field name="iso_code" type="CharField">MRU</field>
+        <field name="currency_name" type="CharField">Ouguiya</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="104">
+        <field name="iso_code" type="CharField">MUR</field>
+        <field name="currency_name" type="CharField">Mauritius Rupee</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="105">
+        <field name="iso_code" type="CharField">XUA</field>
+        <field name="currency_name" type="CharField">ADB Unit of Account</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="106">
+        <field name="iso_code" type="CharField">MXN</field>
+        <field name="currency_name" type="CharField">Mexican Peso</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="107">
+        <field name="iso_code" type="CharField">MXV</field>
+        <field name="currency_name" type="CharField">Mexican Unidad de Inversion (UDI)</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="108">
+        <field name="iso_code" type="CharField">MDL</field>
+        <field name="currency_name" type="CharField">Moldovan Leu</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="109">
+        <field name="iso_code" type="CharField">MNT</field>
+        <field name="currency_name" type="CharField">Tugrik</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="110">
+        <field name="iso_code" type="CharField">MAD</field>
+        <field name="currency_name" type="CharField">Moroccan Dirham</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="111">
+        <field name="iso_code" type="CharField">MZN</field>
+        <field name="currency_name" type="CharField">Mozambique Metical</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="112">
+        <field name="iso_code" type="CharField">MMK</field>
+        <field name="currency_name" type="CharField">Kyat</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="113">
+        <field name="iso_code" type="CharField">NAD</field>
+        <field name="currency_name" type="CharField">Namibia Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="114">
+        <field name="iso_code" type="CharField">NPR</field>
+        <field name="currency_name" type="CharField">Nepalese Rupee</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="115">
+        <field name="iso_code" type="CharField">NIO</field>
+        <field name="currency_name" type="CharField">Cordoba Oro</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="116">
+        <field name="iso_code" type="CharField">NGN</field>
+        <field name="currency_name" type="CharField">Naira</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="117">
+        <field name="iso_code" type="CharField">OMR</field>
+        <field name="currency_name" type="CharField">Rial Omani</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="118">
+        <field name="iso_code" type="CharField">PKR</field>
+        <field name="currency_name" type="CharField">Pakistan Rupee</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="120">
+        <field name="iso_code" type="CharField">PAB</field>
+        <field name="currency_name" type="CharField">Balboa</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="121">
+        <field name="iso_code" type="CharField">PGK</field>
+        <field name="currency_name" type="CharField">Kina</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="122">
+        <field name="iso_code" type="CharField">PYG</field>
+        <field name="currency_name" type="CharField">Guarani</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="123">
+        <field name="iso_code" type="CharField">PEN</field>
+        <field name="currency_name" type="CharField">Sol</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="124">
+        <field name="iso_code" type="CharField">PHP</field>
+        <field name="currency_name" type="CharField">Philippine Peso</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="125">
+        <field name="iso_code" type="CharField">PLN</field>
+        <field name="currency_name" type="CharField">Zloty</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="126">
+        <field name="iso_code" type="CharField">QAR</field>
+        <field name="currency_name" type="CharField">Qatari Rial</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="127">
+        <field name="iso_code" type="CharField">RON</field>
+        <field name="currency_name" type="CharField">Romanian Leu</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="128">
+        <field name="iso_code" type="CharField">RUB</field>
+        <field name="currency_name" type="CharField">Russian Ruble</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="129">
+        <field name="iso_code" type="CharField">RWF</field>
+        <field name="currency_name" type="CharField">Rwanda Franc</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="131">
+        <field name="iso_code" type="CharField">WST</field>
+        <field name="currency_name" type="CharField">Tala</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="132">
+        <field name="iso_code" type="CharField">STN</field>
+        <field name="currency_name" type="CharField">Dobra</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="133">
+        <field name="iso_code" type="CharField">SAR</field>
+        <field name="currency_name" type="CharField">Saudi Riyal</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="134">
+        <field name="iso_code" type="CharField">RSD</field>
+        <field name="currency_name" type="CharField">Serbian Dinar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="135">
+        <field name="iso_code" type="CharField">SCR</field>
+        <field name="currency_name" type="CharField">Seychelles Rupee</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="136">
+        <field name="iso_code" type="CharField">SLL</field>
+        <field name="currency_name" type="CharField">Leone</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="137">
+        <field name="iso_code" type="CharField">SGD</field>
+        <field name="currency_name" type="CharField">Singapore Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="138">
+        <field name="iso_code" type="CharField">XSU</field>
+        <field name="currency_name" type="CharField">Sucre</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="139">
+        <field name="iso_code" type="CharField">SBD</field>
+        <field name="currency_name" type="CharField">Solomon Islands Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="140">
+        <field name="iso_code" type="CharField">SOS</field>
+        <field name="currency_name" type="CharField">Somali Shilling</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="141">
+        <field name="iso_code" type="CharField">SSP</field>
+        <field name="currency_name" type="CharField">South Sudanese Pound</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="142">
+        <field name="iso_code" type="CharField">LKR</field>
+        <field name="currency_name" type="CharField">Sri Lanka Rupee</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="143">
+        <field name="iso_code" type="CharField">SDG</field>
+        <field name="currency_name" type="CharField">Sudanese Pound</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="144">
+        <field name="iso_code" type="CharField">SRD</field>
+        <field name="currency_name" type="CharField">Surinam Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="145">
+        <field name="iso_code" type="CharField">SZL</field>
+        <field name="currency_name" type="CharField">Lilangeni</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="146">
+        <field name="iso_code" type="CharField">SEK</field>
+        <field name="currency_name" type="CharField">Swedish Krona</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="147">
+        <field name="iso_code" type="CharField">CHE</field>
+        <field name="currency_name" type="CharField">WIR Euro</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="148">
+        <field name="iso_code" type="CharField">CHW</field>
+        <field name="currency_name" type="CharField">WIR Franc</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="149">
+        <field name="iso_code" type="CharField">SYP</field>
+        <field name="currency_name" type="CharField">Syrian Pound</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="150">
+        <field name="iso_code" type="CharField">TWD</field>
+        <field name="currency_name" type="CharField">New Taiwan Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="151">
+        <field name="iso_code" type="CharField">TJS</field>
+        <field name="currency_name" type="CharField">Somoni</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="152">
+        <field name="iso_code" type="CharField">TZS</field>
+        <field name="currency_name" type="CharField">Tanzanian Shilling</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="153">
+        <field name="iso_code" type="CharField">THB</field>
+        <field name="currency_name" type="CharField">Baht</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="154">
+        <field name="iso_code" type="CharField">TOP</field>
+        <field name="currency_name" type="CharField">Pa’anga</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="155">
+        <field name="iso_code" type="CharField">TTD</field>
+        <field name="currency_name" type="CharField">Trinidad and Tobago Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="156">
+        <field name="iso_code" type="CharField">TND</field>
+        <field name="currency_name" type="CharField">Tunisian Dinar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="157">
+        <field name="iso_code" type="CharField">TRY</field>
+        <field name="currency_name" type="CharField">Turkish Lira</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="158">
+        <field name="iso_code" type="CharField">TMT</field>
+        <field name="currency_name" type="CharField">Turkmenistan New Manat</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="159">
+        <field name="iso_code" type="CharField">UGX</field>
+        <field name="currency_name" type="CharField">Uganda Shilling</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="160">
+        <field name="iso_code" type="CharField">UAH</field>
+        <field name="currency_name" type="CharField">Hryvnia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="161">
+        <field name="iso_code" type="CharField">AED</field>
+        <field name="currency_name" type="CharField">UAE Dirham</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="162">
+        <field name="iso_code" type="CharField">USN</field>
+        <field name="currency_name" type="CharField">US Dollar (Next day)</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="163">
+        <field name="iso_code" type="CharField">UYU</field>
+        <field name="currency_name" type="CharField">Peso Uruguayo</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="164">
+        <field name="iso_code" type="CharField">UYI</field>
+        <field name="currency_name" type="CharField">Uruguay Peso en Unidades Indexadas (UI)</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="165">
+        <field name="iso_code" type="CharField">UYW</field>
+        <field name="currency_name" type="CharField">Unidad Previsional</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="166">
+        <field name="iso_code" type="CharField">UZS</field>
+        <field name="currency_name" type="CharField">Uzbekistan Sum</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="167">
+        <field name="iso_code" type="CharField">VUV</field>
+        <field name="currency_name" type="CharField">Vatu</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="168">
+        <field name="iso_code" type="CharField">VES</field>
+        <field name="currency_name" type="CharField">Bolívar Soberano</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="169">
+        <field name="iso_code" type="CharField">VND</field>
+        <field name="currency_name" type="CharField">Dong</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="170">
+        <field name="iso_code" type="CharField">YER</field>
+        <field name="currency_name" type="CharField">Yemeni Rial</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="171">
+        <field name="iso_code" type="CharField">ZMW</field>
+        <field name="currency_name" type="CharField">Zambian Kwacha</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="172">
+        <field name="iso_code" type="CharField">ZWL</field>
+        <field name="currency_name" type="CharField">Zimbabwe Dollar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="173">
+        <field name="iso_code" type="CharField">XBA</field>
+        <field name="currency_name" type="CharField">Bond Markets Unit European Composite Unit (EURCO)</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="174">
+        <field name="iso_code" type="CharField">XBB</field>
+        <field name="currency_name" type="CharField">Bond Markets Unit European Monetary Unit (E.M.U.-6)</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="175">
+        <field name="iso_code" type="CharField">XBC</field>
+        <field name="currency_name" type="CharField">Bond Markets Unit European Unit of Account 9 (E.U.A.-9)</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="176">
+        <field name="iso_code" type="CharField">XBD</field>
+        <field name="currency_name" type="CharField">Bond Markets Unit European Unit of Account 17 (E.U.A.-17)</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="177">
+        <field name="iso_code" type="CharField">XTS</field>
+        <field name="currency_name" type="CharField">Codes specifically reserved for testing purposes</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="178">
+        <field name="iso_code" type="CharField">XXX</field>
+        <field name="currency_name" type="CharField">The codes assigned for transactions where no currency is involved</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="179">
+        <field name="iso_code" type="CharField">XAU</field>
+        <field name="currency_name" type="CharField">Gold</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="180">
+        <field name="iso_code" type="CharField">XPD</field>
+        <field name="currency_name" type="CharField">Palladium</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="181">
+        <field name="iso_code" type="CharField">XPT</field>
+        <field name="currency_name" type="CharField">Platinum</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="182">
+        <field name="iso_code" type="CharField">XAG</field>
+        <field name="currency_name" type="CharField">Silver</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="183">
+        <field name="iso_code" type="CharField">LTL</field>
+        <field name="currency_name" type="CharField">Lithuanian Litas</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="184">
+        <field name="iso_code" type="CharField">MTL</field>
+        <field name="currency_name" type="CharField">Maltese Lira</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.currency" pk="185">
+        <field name="iso_code" type="CharField">SKK</field>
+        <field name="currency_name" type="CharField">Slovak Koruna</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+</django-objects>

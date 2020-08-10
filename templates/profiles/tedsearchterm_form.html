@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% load bootstrap4 %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h1>{{app.verbose_name}} / {{model_name}} / Add</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>Add a new search term that can be used to filter TED Contract Notice and Lot data.</p>
+        </div>
+    </div>
+    <form class="form-horizontal" action="{{request.path}}" method="post">
+
+    <div class="row">
+        <div class="col-md-12">
+            {% bootstrap_form_errors form %}
+        </div>
+    </div>
+    <div class="row">    
+    {% csrf_token %}
+    {% for field in form %}
+    	<div class="col-md-4">
+    	{% bootstrap_field field layout='horizontal' %}
+    	</div>
+    {% endfor %}
+    </div>
+    <div class="row pb-2">
+        <div class="col">
+            <div class="btn-group float-right" role="group" aria-label="List View Controls">
+                {% bootstrap_button href="javascript:history.go(-1)" content="Back" button_type="link" button_class="btn btn-outline-primary" %}
+                {% bootstrap_button button_class="btn btn-outline-primary" button_type="submit" content="Save and add another" name="_addanother" %}
+                {% bootstrap_button button_class="btn btn-outline-primary" button_type="submit" content="Save" %}
+            </div>
+        </div>
+    </div>
+    </form>
+</div>
+{% endblock content %}

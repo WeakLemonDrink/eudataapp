@@ -1,0 +1,7 @@
+{% if record.procurement_docs_url|length >= 50 %}
+	<a href="{{record.procurement_docs_url}}" data-toggle="tooltip" target="_blank" title="{{record.procurement_docs_url}}">
+{% else %}
+	<a href="{{record.procurement_docs_url}}" target="_blank">
+{% endif %}
+	{{record.procurement_docs_url|truncatechars:50}}
+	</a>

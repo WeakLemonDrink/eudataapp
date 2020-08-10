@@ -1,0 +1,8 @@
+<div class="btn-group">
+  <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+  <div class="dropdown-menu">
+  		<a class="dropdown-item" href="{% url 'tenders:contractnotice-list' %}?ojs_ref={{record.contract_notice}}">View Contract Notice</a>
+		<a class="dropdown-item" href="{% url 'tenders:lot-list' %}?contract_notice={{record.contract_notice.id}}">View Lots</a>
+		<a class="dropdown-item" href="{% url 'tenders:contractnotice-edit-lot-units' record.contract_notice.id %}">Edit Lot Units</a>
+  </div>
+</div>

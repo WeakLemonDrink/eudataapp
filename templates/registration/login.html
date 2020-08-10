@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% load bootstrap4 %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h1>Login</h1>
+            <p>Please login using your credentials.</p>
+        </div>
+    </div>
+	<form class="form-horizontal" action="{{request.path}}" method="post">
+		{% csrf_token %}
+		{% bootstrap_form_errors form %}
+		{% for field in form %}
+			{% bootstrap_field field layout='horizontal' %}
+		{% endfor %}
+		<div class="row">
+			<div class="col">
+                <div class="btn-group float-right" role="group" aria-label="Login Controls">
+					{% bootstrap_button href="javascript:history.go(-1)" content="Back" button_type="link" button_class="btn btn-outline-primary" %}
+                    {% bootstrap_button button_class="btn btn-outline-primary" button_type="submit" content="Log in" %}
+                </div>
+            </div>
+        </div>
+		<input type="hidden" name="next" value="{% url 'tenders:index' %}"/>
+	</form>
+</div>
+{% endblock %}

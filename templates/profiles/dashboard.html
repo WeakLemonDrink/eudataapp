@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% load bootstrap4 %}
+{% load render_table from django_tables2 %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h1>Profiles / My Dashboard</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>Shows any Contract Notices database entries added {% if pub_date_duration %}over the past <b>{{pub_date_duration}} days</b>{% elif pub_date_duration_dt %} on <b>{{pub_date_duration_dt|date:"l jS F Y"}}</b>{% endif %} that match <a href="{% url 'profiles:tedsearchterm-list' %}">your TED Search Terms</a>.</p>
+        </div>
+    </div>
+    <div class="row pb-2">
+        <div class="col">
+            <span class="text-inline-block align-middle">Click to show matches found in Contract Notice database entries added over the past </span>
+            <div class="btn-group" role="group">
+                {% if pub_date_duration == '7' %}<a class="btn btn-outline-primary active" aria-pressed="true" href="{{request.path}}?publication_date=7" type="link">{% else %}
+                <a class="btn btn-outline-primary" href="{{request.path}}?publication_date=7" type="link">{% endif %}7 days</a>
+                {% if pub_date_duration == '14' %}<a class="btn btn-outline-primary active" aria-pressed="true" href="{{request.path}}?publication_date=14" type="link">{% else %}
+                <a class="btn btn-outline-primary" href="{{request.path}}?publication_date=14" type="link">{% endif %}14 days</a>
+                {% if pub_date_duration == '21' %}<a class="btn btn-outline-primary active" aria-pressed="true" href="{{request.path}}?publication_date=21" type="link">{% else %}
+                <a class="btn btn-outline-primary" href="{{request.path}}?publication_date=21" type="link">{% endif %}21 days</a>
+            </div>
+        </div>
+    </div>
+    {% if search_term_matches %}
+        <div id="accordion">
+        {% for match in search_term_matches %}
+            <div class="card">
+                <div class="card-header" id="heading{{forloop.counter}}">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse{{forloop.counter}}" aria-expanded="true" aria-controls="collapse{{forloop.counter}}">{{match.term}} <span class="badge badge-primary">{{match.count}}</span></button>
+                    </h5>
+                </div>
+                {% if forloop.first %}
+                <div id="collapse{{forloop.counter}}" class="collapse show" aria-labelledby="heading{{forloop.counter}}" data-parent="#accordion">
+                {% else %}
+                <div id="collapse{{forloop.counter}}" class="collapse" aria-labelledby="heading{{forloop.counter}}" data-parent="#accordion">
+                {% endif %}
+                    {% render_table match.table %}
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    {% else %}
+        <div class="row">
+            <div class="col">
+                {% if search_term_qs.exists %}
+                    <p>No Contract Notices database entries added over the time period selected match any of your TED Search Terms.</p>
+                {% else %}
+                    <p>There are no search terms associated with your user account. Do you want to <a href="{% url 'profiles:tedsearchterm-create' %}">add some?</a></p>
+                {% endif %}
+            </div>
+        </div>
+    {% endif %}
+</div>
+{% endblock content %}

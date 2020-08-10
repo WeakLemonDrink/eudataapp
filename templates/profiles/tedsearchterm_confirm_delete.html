@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% load bootstrap4 %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h1>{{app.verbose_name}} / {{model_name}} / Delete</h1>
+        </div>
+    </div>
+    <form method="post">
+    {% csrf_token %}
+    <div class="row">
+        <div class="col">
+            <p>Are you sure you want to delete "{{object}}"?</p>
+        </div>
+    </div>
+    <div class="row pb-2">
+        <div class="col">
+            <div class="btn-group float-right" role="group" aria-label="List View Controls">
+                {% bootstrap_button href="javascript:history.go(-1)" content="Back" button_type="link" button_class="btn btn-outline-primary" %}
+                {% bootstrap_button button_class="btn btn-outline-primary" button_type="submit" content="Confirm" %}
+            </div>
+        </div>
+    </div>
+    </form>
+</div>
+{% endblock content %}

@@ -1,0 +1,275 @@
+{% extends "base.html" %}
+
+{% load bootstrap4 %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h1>{{app.verbose_name}} / {{model_name}} / {{object}}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>Shows details for an individual {{model_name}} entry including price per unit information from <a href="https://digital.nhs.uk/data-and-information/areas-of-interest/prescribing/practice-level-prescribing-in-england-a-summary" target="_blank">Practice Level Prescribing</a> data provided by the <a href="https://openprescribing.net/" target="_blank">Open Prescribing</a> spending API.</p>
+        </div>    
+    </div>
+    <dl class="row">
+        <dt class="col-sm-2">Code</dt>
+        <dd class="col-sm-4">{{object.code}}</dd>
+        <dt class="col-sm-2">Name</dt>
+        <dd class="col-sm-4">{{object.name}}</dd>
+        <dt class="col-sm-2">Chemical Substance</dt>
+        <dd class="col-sm-4">{{object.chem_substance}}</dd>
+        <dt class="col-sm-2">Product</dt>
+        <dd class="col-sm-4">{{object.product}}</dd>
+    </dl>
+    <div class="row">
+        <div class="col">
+            <h3>Price per unit data</h3>
+        </div>    
+    </div>
+    <div class="row">
+        <div class="col-md-10" id="graph">
+            <p>Loading data...</p>
+        </div>
+        <div class="col-md-2">
+            <dl class="dl-horizontal">              
+                <dt>Min</dt>
+                <dd id="min">-</dd>
+                <dt>Mean</dt>
+                <dd id="mean">-</dd>
+                <dt>Max</dt>
+                <dd id="max">-</dd>                
+            </dl>
+        </div>  
+    </div>            
+    <div class="row pb-2">
+        <div class="col">
+            <div class="btn-group float-right" role="group" aria-label="List View Controls">
+                {% bootstrap_button href="javascript:history.go(-1)" content="Back" button_type="link" button_class="btn btn-outline-primary" %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+{% block script %}
+<style>
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+}
+</style>
+<script type="text/javascript">
+    function print_stats(data) {
+        if (Array.isArray(data) && Object.keys(data).length !== 0) {
+            document.getElementById('max').innerHTML = "£" + d3.max(data, function(d) { return d.price_per_unit; }).toFixed(2);
+            document.getElementById('mean').innerHTML = "£" + d3.mean(data, function(d) { return d.price_per_unit; }).toFixed(2);
+            document.getElementById('min').innerHTML = "£" + d3.min(data, function(d) { return d.price_per_unit; }).toFixed(2);
+        }
+    };
+    function draw_graph(canvas_element, url) {
+        // Remove existing svg if it exists
+        var canvas = document.getElementById(canvas_element);
+        while (canvas.hasChildNodes()) {
+            canvas.removeChild(canvas.firstChild);
+        }
+
+        // Set the dimensions of the canvas / graph
+        var margin = {top: 30, right: 100, bottom: 50, left: 100},
+            width = 900 - margin.left - margin.right,
+            height = 350 - margin.top - margin.bottom;
+
+        // Set the ranges
+        var x = d3.scaleTime().range([0, width]);
+        var y = d3.scaleLinear().range([height, 0]);
+
+        // Define the axes
+        var xAxis = d3.axisBottom().scale(x).ticks(5);
+        var yAxis = d3.axisLeft().scale(y).ticks(5);
+
+        // define the line
+        var valueline = d3.line()
+            .x(function(d) { return x(d.date); })
+            .y(function(d) { return y(d.price_per_unit); });
+            
+        // Adds the svg canvas
+        var svg = d3.select("#"+canvas_element)
+            .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+                .attr("transform", 
+                      "translate(" + margin.left + "," + margin.top + ")");
+
+        var lineSvg = svg.append("g");
+
+        var focus = svg.append("g") 
+            .style("display", "none");
+
+        var bisect_x = d3.bisector(function(d) { return d.date; }).left
+
+        var parseDate = d3.timeParse("%Y-%m-%d");
+        var dateFormat = d3.timeFormat("%d/%m/%Y");
+
+        // Get the data
+        d3.json(url).then(function(data) {
+            // format the data
+            data.forEach(function(d) {
+                d.date = parseDate(d.date);
+                d.price_per_unit = +d.price_per_unit;
+            });
+
+        // Print stats if the array contains anything
+        print_stats(data);
+
+        // Scale the range of the data
+        x.domain(d3.extent(data, function(d) { return d.date; }));
+        y.domain([0, d3.max(data, function(d) { return d.price_per_unit; })]);
+
+        // Add the valueline path.
+        svg.append("path")
+          .data([data])
+          .attr("class", "line")
+          .attr("d", valueline);
+
+        // Add the x Axis
+        svg.append("g")
+          .attr("transform", "translate(0," + height + ")")
+          .call(d3.axisBottom(x));
+
+        // text label for the x axis
+        svg.append("text")             
+            .attr("transform",
+            "translate(" + (width/2) + " ," + 
+                           (height + margin.top + 20) + ")")
+            .style("text-anchor", "middle")
+            .text("Date");
+
+        // Add the y Axis
+        svg.append("g")
+          .call(d3.axisLeft(y));
+
+        // text label for the y axis
+        svg.append("text")
+          .attr("transform", "rotate(-90)")
+          .attr("y", 0 - margin.left)
+          .attr("x",0 - (height / 2))
+          .attr("dy", "1em")
+          .style("text-anchor", "middle")
+          .text("Price Per Unit (£)");
+
+        // append the x line
+        focus.append("line")
+            .attr("class", "x")
+            .style("stroke", "grey")
+            .attr("y1", 0)
+            .attr("y2", height);
+
+        // append the y line
+        focus.append("line")
+            .attr("class", "y")
+            .style("stroke", "grey")
+            .attr("x1", width)
+            .attr("x2", width);
+
+        // append the circle at the intersection 
+        focus.append("circle")
+            .attr("class", "y")
+            .style("fill", "none")
+            .style("stroke", "grey")
+            .style("stroke-width", 2)
+            .attr("r", 6);
+        
+        // place the y value at the intersection
+        focus.append("text")
+            .attr("class", "y1")
+            .style("stroke", "white")
+            .style("stroke-width", "3.5px")
+            .style("opacity", 0.8)
+            .attr("dx", 8)
+            .attr("dy", "-.3em");
+        focus.append("text")
+            .attr("class", "y2")
+            .attr("dx", 8)
+            .attr("dy", "-.3em");
+
+        // place the x value at the intersection
+        focus.append("text")
+            .attr("class", "y3")
+            .style("stroke", "white")
+            .style("stroke-width", "3.5px")
+            .style("opacity", 0.8)
+            .attr("dx", 8)
+            .attr("dy", "1em");
+        focus.append("text")
+            .attr("class", "y4")
+            .attr("dx", 8)
+            .attr("dy", "1em");
+
+        // append the rectangle to capture mouse
+        svg.append("rect")
+            .attr("width", width)
+            .attr("height", height)
+            .style("fill", "none")
+            .style("pointer-events", "all")
+            .on("mouseover", function() { focus.style("display", null); })
+            .on("mouseout", function() { focus.style("display", "none"); })
+            .on("mousemove", mousemove);
+
+        function mousemove() {
+            var x0 = x.invert(d3.mouse(this)[0]),
+                i = bisect_x(data, x0, 1),
+                d0 = data[i - 1],
+                d1 = data[i],
+                d = x0 - d0.date > d1.date - x0 ? d1 : d0;
+
+            focus.select("circle.y")
+                .attr("transform",
+                      "translate(" + x(d.date) + "," +
+                                     y(d.price_per_unit) + ")");
+
+            focus.select("text.y1")
+                .attr("transform",
+                      "translate(" + x(d.date) + "," +
+                                     y(d.price_per_unit) + ")")
+                .text("£" + d.price_per_unit.toFixed(2));
+
+            focus.select("text.y2")
+                .attr("transform",
+                      "translate(" + x(d.date) + "," +
+                                     y(d.price_per_unit) + ")")
+                .text("£" + d.price_per_unit.toFixed(2));
+
+            focus.select("text.y3")
+                .attr("transform",
+                      "translate(" + x(d.date) + "," +
+                                     y(d.price_per_unit) + ")")
+                .text(dateFormat(d.date));
+
+            focus.select("text.y4")
+                .attr("transform",
+                      "translate(" + x(d.date) + "," +
+                                     y(d.price_per_unit) + ")")
+                .text(dateFormat(d.date));
+
+            focus.select(".x")
+                .attr("transform",
+                      "translate(" + x(d.date) + "," +
+                                     y(d.price_per_unit) + ")")
+                           .attr("y2", height - y(d.price_per_unit));
+
+            focus.select(".y")
+                .attr("transform",
+                      "translate(" + width * -1 + "," +
+                                     y(d.price_per_unit) + ")")
+                           .attr("x2", width + width);
+
+            }
+        });
+
+    };
+    window.onload = draw_graph("graph", "{% url 'medicines:get-pricing-data' object.code %}");
+</script>    
+{% endblock script %}

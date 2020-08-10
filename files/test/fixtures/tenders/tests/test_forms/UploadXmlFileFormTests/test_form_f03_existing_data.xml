@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+    <object model="tenders.contractnotice" pk="1">
+        <field name="added_timestamp" type="DateTimeField">2019-11-26T21:25:11.803979+00:00</field>
+        <field name="ojs_ref" type="CharField">2018/S 191-431371</field>
+        <field name="country" rel="ManyToOneRel" to="tenders.country">102</field>
+        <field name="url" type="CharField">http://ted.europa.eu/udl?uri=TED:NOTICE:431371-2018:TEXT:EN:HTML</field>
+        <field name="title" type="CharField">Gyógyszerek, egyéb termékek beszerzése BAZ Kórház</field>
+        <field name="short_descr" type="TextField">Gyógyszerek és egyéb termékek beszerzése a Borsod-Abaúj-Zemplén Megyei Központi Kórház és Egyetemi Oktatókórházra részére 12+12 hónapos időtartamra.</field>
+        <field name="contracting_body_name" type="CharField">Borsod-Abaúj-Zemplén Megyei Központi Kórház és Egyetemi Oktatókórház</field>
+        <field name="closing_date" type="DateTimeField">2018-11-05T10:42:00+00:00</field>
+        <field name="dispatch_date" type="DateField">2018-10-02</field>
+        <field name="publication_date" type="DateField">2018-10-04</field>
+        <field name="procurement_ref" type="CharField">EKR000644792018</field>
+        <field name="procurement_docs_url" type="CharField">https://ekr.gov.hu/portal/kozbeszerzes/eljarasok/EKR000644792018/reszletek</field>
+        <field name="full_docs_available" type="BooleanField">True</field>
+        <field name="procurement_docs_file" type="FileField"></field>
+    </object>
+    <object model="tenders.contractawardnotice" pk="1">
+        <field name="added_timestamp" type="DateTimeField">2019-11-26T21:25:11.803979+00:00</field>
+        <field name="ojs_ref" type="CharField">2019/S 072-170256</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="country" rel="ManyToOneRel" to="tenders.country">102</field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency">74</field>
+        <field name="url" type="CharField">http://ted.europa.eu/udl?uri=TED:NOTICE:170256-2019:TEXT:EN:HTML</field>
+        <field name="title" type="CharField">Postępowanie o udzielenie zamówienia publicznego w trybie przetargu nieograniczonego na dostawy leków</field>
+        <field name="short_descr" type="TextField">Gyógyszerek és egyéb termékek beszerzése a Borsod-Abaúj-Zemplén Megyei Központi Kórház és Egyetemi Oktatókórházra részére 12+12 hónapos időtartamra.</field>
+        <field name="contracting_body_name" type="CharField">Uniwersytecki Szpital Dziecięcy w Lublinie</field>
+        <field name="dispatch_date" type="DateField">2019-04-11</field>
+        <field name="publication_date" type="DateField">2019-04-11</field>
+        <field name="value_of_procurement" type="DecimalField">387977728</field>
+    </object>
+    <object model="tenders.lot" pk="1">
+        <field name="added_timestamp" type="DateTimeField">2019-11-26T21:25:11.807179+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">1</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Gyógyszerek és egyéb termékek beszerzése</field>
+        <field name="short_descr" type="TextField">II.2.4) A közbeszerzés ismertetése:
+(az építési beruházás, árubeszerzés vagy szolgáltatás jellege és mennyisége, illetve az igények és követelmények meghatározása)
+Különbőzó gyógyszerek, és gyógyhatású termékeke beszerzése különböző hatóanyaggal, és kiszerelésben a dokumentációban részletezettek szerint, tekintettel arra, hogy az EKR rendszerbe a karakter korlátozás miatt a beszerzendő termékek és mennyiségek nem sorolhatók fel.
+A hivatalos nagykerereskedelmi árral rendelkező készítményeknél az ajánlati ár a nagykereskedelmi árnál magasabb nem lehet.
+A dokumetnáció mellékletét képező "Részletező ártáblázat" nevezetű dokumentációt kérjük maradéktalanul kitölteni, az ajánlatok összehasonlítása és bírálata hatóanyagonként történik.</field>
+        <field name="info_add" type="TextField"></field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="2">
+        <field name="added_timestamp" type="DateTimeField">2019-11-26T21:25:11.807321+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">2</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">LMWH készítmények beszerzése</field>
+        <field name="short_descr" type="TextField">LMWH készítmények különböző kiszerelésben a dokumentációban részletezettek szerint, tekintettel arra, hogy az EKR rendszerbe a karakter korlátozás miatt a beszerzendő termékek és mennyiségek nem sorolhatók fel.
+A hivatalos nagykerereskedelmi árral rendelkező készítményeknél az ajánlati ár a nagykereskedelmi árnál magasabb nem lehet.
+A dokumetnáció mellékletét képező "Részletező ártáblázat" nevezetű dokumentációt kérjük maradéktalanul kitölteni, az ajánlatok összehasonlítása és bírálata hatóanyagonként történik.
+Dalteparin 2500 NE oldatos injekció 30 amp
+Enoxaparin 12000 NE oldatos injekció 192 amp
+Enoxaparin 10000 NE oldatos injekció 327 amp
+Enoxaparin 2000 NE oldatos injekció 953 amp
+Enoxaparin 8000 NE oldatos injekció 9058 amp
+Enoxaparin 30000 NE oldatos injekció 10562 amp
+Enoxaparin 6000 NE oldatos injekció 79113 amp
+Enoxaparin 4000 NE oldatos injekció 92756 amp
+Nadroparin 9500 NE oldatos injekció 502 amp
+Nadroparin 2850 NE oldatos injekció 1562 amp
+Nadroparin 7600 NE oldatos injekció 4689 amp
+Nadroparin 3800 NE oldatos injekció 32140 amp
+Nadroparin 5700 NE oldatos injekció 39050 amp</field>
+        <field name="info_add" type="TextField"></field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="3">
+        <field name="added_timestamp" type="DateTimeField">2019-11-26T21:25:11.807414+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">3</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Antimikróbás szerek beszerzése</field>
+        <field name="short_descr" type="TextField">Különbőzó Antimikróbás szerek beszerzése különböző hatóanyaggal, és kiszerelésben a dokumentációban részletezettek szerint, tekintettel arra, hogy az EKR rendszerbe a karakter korlátozás miatt a beszerzendő termékek és mennyiségek nem sorolhatók fel.
+A hivatalos nagykerereskedelmi árral rendelkező készítményeknél az ajánlati ár a nagykereskedelmi árnál magasabb nem lehet.
+A dokumetnáció mellékletét képező "Részletező ártáblázat" nevezetű dokumentációt kérjük maradéktalanul kitölteni, az ajánlatok összehasonlítása és bírálata hatóanyagonként történik.
+Aciklovir 200 mg tabletta 750 tabl
+Aciklovir 25 mg/ml oldatos injekció 1294 amp
+Aciklovir 400 mg tabletta 1947 tabl
+Aciklovir 25 mg/ml por oldatos infúzióhoz 518 amp
+Aciklovir 40 mg/ml külsőleges szuszpenzió 29 db
+Amfotericin 50 mg por oldatos infúzióhoz 200 amp
+Amikacin 500 mg oldatos injekció 2301 amp
+Amoxicillin 1000 mg filmtabletta 300 filmtabl
+Amoxicillin 250 mg/5 ml granulátum belsőleges szuszpenzióhoz 25 db
+Amoxicillin 500 mg filmtabletta 512 filmtabl
+Amoxicillin 750 mg filmtabletta 167 filmtabl
+Amoxicillin és enzim-inhibitor 125 mg/31,25 mg/5 ml por belsőleges szuszpenzióhoz 136 db
+Amoxicillin és enzim-inhibitor 250 mg/62,5 mg/5 ml por belsőleges szuszpenzióhoz 62 db
+Amoxicillin és enzim-inhibitor 250 mg/125 mg filmtabletta 2790 filmtabl
+Amoxicillin és enzim-inhibitor 500 mg/100 mg por oldatos injekcióhoz vagy infúzióhoz 658 db
+Ampicillin 500 mg kapszula 1000 kapsz
+Ampicillin 200 mg/ml por oldatos injekcióhoz 1960 amp
+Ampicillin és enzim-inhibitor 1,5 g oldatos injekció 681 amp
+Ampicillin és enzim-inhibitor 3 g oldatos injekció 796 amp
+Azitromicin 250 mg filmtabletta 600 filmtabl
+Azitromicin 500 mg filmtabletta 1152 filmtabl
+Azitromicin 100 mg/5 ml por sziruphoz 47 db
+Caspofungin 50 mg por oldatos infúzióhoz való koncentrátumhoz 26 db
+Cefazolin 1 g por oldatos injekcióhoz 11345 amp
+Cefepim 1 g por oldatos injekcióhoz 86 amp
+Cefepim 2 g por oldatos injekcióhoz 253 amp
+Cefixime 100 mg/5 ml por szuszpenzióhoz 54 db
+Cefixime 200 mg filmtabletta 260 filmtabl
+Ceftazidim 1 g por oldatos injekcióhoz 682 amp
+Ceftazidim 2 g por oldatos injekcióhoz 1150 amp
+Cefuroxim 250 mg por oldatos injekcióhoz 230 amp
+Cefuroxim 125 mg filmtabletta 155 filmtabl
+Cefuroxim 125 mg/5 ml belsőleges szuszpenzió 171 db
+Ciprofloxacin 250 mg filmtabletta 1698 filmtabl
+Claritromicin 250 mg filmtabletta 1208 filmtabl
+Claritromicin 125 mg/5 ml granulátum belsőleges szuszpenzióhoz 76 db
+Claritromicin 50 mg/ml por oldatos infúzióhoz 373 amp
+Clindamicin 150 mg kapszula 3069 kapsz
+Clindamicin 300 mg kapszula 13375 kapsz
+Colistin 1000000 NE por oldatos injekcióhoz 1660 amp
+Doxiciklin 100 mg kapszula 1646 kapsz
+Flukonazol 10 mg/ml por belsőleges szuszpenzióhoz 39 db
+Flukonazol 40 mg/ml por belsőleges szuszpenzióhoz 38 db
+Ganciklovir 500 mg oldatos injekció 103 amp
+Gentamicin 80 mg oldatos injekció 8781 amp
+Inozin-pranobex 500 mg tabletta 568 tabl
+Sultamicillin 250 mg/5 ml por szuszpenzióhoz 103 db
+Sultamicillin 375 mg filmtabletta 156 filmtabl
+Szulfametoxazol és trimetoprim 400 mg/80 mg tabletta 20511 tabl
+Szulfametoxazol és trimetoprim 25 mg/5 mg/ml szirup 143 db
+Tigecyclin 50 mg por oldatos infúzióhoz 849 amp
+Tobramicin 40 mg/ml oldatos injekció 3310 amp</field>
+        <field name="info_add" type="TextField"></field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="4">
+        <field name="added_timestamp" type="DateTimeField">2019-11-26T21:25:11.807500+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">4</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Citosztatikumok beszerzése</field>
+        <field name="short_descr" type="TextField">Különbőzó Citosztatikumok beszerzése különböző hatóanyaggal, és kiszerelésben a dokumentációban részletezettek szerint, tekintettel arra, hogy az EKR rendszerbe a karakter korlátozás miatt a beszerzendő termékek és mennyiségek nem sorolhatók fel.
+A hivatalos nagykerereskedelmi árral rendelkező készítményeknél az ajánlati ár a nagykereskedelmi árnál magasabb nem lehet.
+A dokumetnáció mellékletét képező "Részletező ártáblázat" nevezetű dokumentációt kérjük maradéktalanul kitölteni, az ajánlatok összehasonlítása és bírálata hatóanyagonként történik.
+Cabazitaxel 60 mg koncentrátum oldatos infúzióhoz 22 amp
+Capecitabin 150 mg filmtabletta 19560 filmtabl
+Capecitabin 500 mg filmtabletta 154280 filmtabl
+Daunorubicin 2 mg/ml por oldatos injekcióhoz 52 amp
+Daunorubicin 20 MG POR ÉS OLDÓSZER OLDATOS INJEKCIÓHOZ por oldatos injekcióhoz 26 amp
+Docetaxel 20 mg/ml koncentrátum oldatos infúzióhoz 160 amp
+Doxorubicin 50 mg liposzómás infúzió 133 amp
+Doxorubicin 50 MG POR, DISZPERZIÓ ÉS OLDÓSZER DISZPERZIÓS INFÚZIÓ KÉSZÍTÉSRE SZÁNT KONCENTRÁTUMHOZ por liposzómás diszperziós infúzió készítésére szánt koncentrátumhoz 73 amp
+Ifoszfamid 500 mg por oldatos injekcióhoz 122 amp
+Ifoszfamid 2000 mg por oldatos injekcióhoz 140 amp
+Ifoszfamid 1000 mg por oldatos injekcióhoz 139 amp
+Metotrexát 10 mg/ml oldatos injekció 208 amp
+Metotrexát 100 mg/ml; 50 ml koncentrátum oldatos infúzióhoz 50 amp
+Metotrexát 100 mg/ml; 10 ml koncentrátum oldatos infúzióhoz 112 amp
+Mitomicin 20 mg/ml por oldatos injekcióhoz 126 amp
+Pembrolizumab 50 mg por oldatos infúzióhoz való koncentrátumhoz 15 db
+Raltitrexed 2 mg por oldatos infúzióhoz 120 amp
+Tegafur, kombinációk 20 mg/5,8 mg/15,8 mg kemény kapszula 840 kapsz
+Thiotepa 10 mg/ml por oldatos infúzióhoz való koncentrátumhoz 25 db
+Triptorelin 3,75 mg oldatos injekció 29 amp
+Vinorelbin 10 MG/ML KONCENTRÁTUM OLDATOS INFÚZIÓHOZ (1 ml) koncentrátum oldatos infúzióhoz 42 amp
+Vinorelbin 10 MG/ML KONCENTRÁTUM OLDATOS INFÚZIÓHOZ (5 ml) koncentrátum oldatos infúzióhoz 50 amp</field>
+        <field name="info_add" type="TextField"></field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="5">
+        <field name="added_timestamp" type="DateTimeField">2019-11-26T21:25:11.807583+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">5</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Magisztrális alapanyagok beszerzése</field>
+        <field name="short_descr" type="TextField">Különbőzó magisztrális anyagok beszerzése különböző mennyiségben és kiszerelésben a dokumentációban részletezettek szerint, tekintettel arra, hogy az EKR rendszerbe a karakter korlátozás miatt a beszerzendő termékek és mennyiségek nem sorolhatók fel.
+A hivatalos nagykerereskedelmi árral rendelkező készítményeknél az ajánlati ár a nagykereskedelmi árnál magasabb nem lehet.
+A dokumetnáció mellékletét képező "Részletező ártáblázat" nevezetű dokumentációt kérjük maradéktalanul kitölteni, az ajánlatok összehasonlítása és bírálata hatóanyagonként történik.</field>
+        <field name="info_add" type="TextField"></field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="6">
+        <field name="added_timestamp" type="DateTimeField">2019-11-26T21:25:11.807707+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">6</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Infúziók beszerzése</field>
+        <field name="short_descr" type="TextField">Különbőzó Infúziók beszerzése különböző hatóanyaggal, és kiszerelésben a dokumentációban részletezettek szerint, tekintettel arra, hogy az EKR rendszerbe a karakter korlátozás miatt a beszerzendő termékek és mennyiségek nem sorolhatók fel.
+A hivatalos nagykerereskedelmi árral rendelkező készítményeknél az ajánlati ár a nagykereskedelmi árnál magasabb nem lehet.
+A dokumetnáció mellékletét képező "Részletező ártáblázat" nevezetű dokumentációt kérjük maradéktalanul kitölteni, az ajánlatok összehasonlítása és bírálata hatóanyagonként történik.</field>
+        <field name="info_add" type="TextField"></field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="7">
+        <field name="added_timestamp" type="DateTimeField">2019-11-26T21:25:11.807789+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">7</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Gyógytápszerek beszerzése</field>
+        <field name="short_descr" type="TextField">Különbőzó gyógytápszerek beszerzése különböző összetételben, és kiszerelésben a dokumentációban részletezettek szerint, tekintettel arra, hogy az EKR rendszerbe a karakter korlátozás miatt a beszerzendő termékek és mennyiségek nem sorolhatók fel.
+A hivatalos nagykerereskedelmi árral rendelkező készítményeknél az ajánlati ár a nagykereskedelmi árnál magasabb nem lehet.
+A dokumetnáció mellékletét képező "Részletező ártáblázat" nevezetű dokumentációt kérjük maradéktalanul kitölteni, az ajánlatok összehasonlítása és bírálata ezen dokumentum alapján történik.</field>
+        <field name="info_add" type="TextField"></field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="8">
+        <field name="added_timestamp" type="DateTimeField">2019-11-26T21:25:11.807867+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">8</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Kontrasztanyagok beszerzése</field>
+        <field name="short_descr" type="TextField">Kontrasztanyagok beszerzése különböző hatóanyaggal, és kiszerelésben a dokumentációban részletezettek szerint, tekintettel arra, hogy az EKR rendszerbe a karakter korlátozás miatt a beszerzendő termékek és mennyiségek nem sorolhatók fel.
+A hivatalos nagykerereskedelmi árral rendelkező készítményeknél az ajánlati ár a nagykereskedelmi árnál magasabb nem lehet.
+A dokumetnáció mellékletét képező "Részletező ártáblázat" nevezetű dokumentációt kérjük maradéktalanul kitölteni, az ajánlatok összehasonlítása és bírálata hatóanyagonként történik.
+Gadoteric acid 0,5 mmol/ml oldatos injekció 20 ml 308 db
+Gadoteric acid 0,5 mmol/ml oldatos injekció 60 ml 302 db
+Gadobutrol 1,0 mmol/ml oldatos injekció 15 ml 588 db
+Diatrizoinsav 10 g/ml oldat 100 ml 1630 db
+Etil-észterek és jódozott zsírsavak 480 mg/ml oldatos injekció 10 ml 83 db
+Barium-szulfát szuszpendálószerrel 1 g/ml szuszpenzió 2000 ml 23 db
+Iohexol 300 mg/ml oldatos injekció 100 ml 110 db
+Iohexol 300 mg/ml oldatos injekció 200 ml 2480 db
+Iohexol 300 mg/ml oldatos injekció 50 ml 730 db
+Iohexol 300 mg/ml oldatos injekció 500 ml 1116 db
+Iohexol 350 mg/ml oldatos injekció 50 ml 110 db
+Ioversol 300 mg/ml oldatos injekció 100 ml 35 db
+Ioversol 350 mg/ml oldatos injekció 100 ml 30 db
+Gadoxetát 0,25 mmol/ml oldatos injekció 10 ml 4 db
+Iopromid 300 mg/ml oldatos injekció 500 ml 544 db
+Iodixanol 320 mg/ml oldatos injekció 200 ml 20 db
+Iodixanol 320 mg/ml oldatos injekció 500 ml 492 db
+Iobitridol 300 mg/ml oldatos injekció 200 ml 155 db
+Iobitridol 300 mg/ml oldatos injekció 50 ml 871 db
+Iobitridol 300 mg/ml oldatos injekció 500 ml 755 db</field>
+        <field name="info_add" type="TextField"></field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="9">
+        <field name="added_timestamp" type="DateTimeField">2019-11-26T21:25:11.807945+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">9</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Infúziós zsákok beszerzése</field>
+        <field name="short_descr" type="TextField">Infúziós zsákok beszerzése különböző méretben a dokumentációban részletezettek szerint, tekintettel arra, hogy az EKR rendszerbe a karakter korlátozás miatt a beszerzendő termékek és mennyiségek nem sorolhatók fel.
+A hivatalos nagykerereskedelmi árral rendelkező készítményeknél az ajánlati ár a nagykereskedelmi árnál magasabb nem lehet.
+A dokumetnáció mellékletét képező "Részletező ártáblázat" nevezetű dokumentációt kérjük maradéktalanul kitölteni, az ajánlatok összehasonlítása és bírálata ezen dokumentum alapján történik.
+MultiComp II berendezéssel kompatibilis EVA egyszerhasználatos infúziós zsák - 250 ml 567 db
+MultiComp II berendezéssel kompatibilis EVA egyszerhasználatos infúziós zsák - 500 ml 31967 db
+MultiComp II berendezéssel kompatibilis EVA egyszerhasználatos infúziós zsák - 1000 ml 6807 db
+MultiComp II berendezéssel kompatibilis EVA egyszerhasználatos infúziós zsák - 2000 ml 567 db</field>
+        <field name="info_add" type="TextField"></field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+    <object model="tenders.lot" pk="10">
+        <field name="added_timestamp" type="DateTimeField">2019-11-26T21:25:11.808022+00:00</field>
+        <field name="contract_notice" rel="ManyToOneRel" to="tenders.contractnotice">1</field>
+        <field name="lot_no" type="PositiveIntegerField">10</field>
+        <field name="awarded_contract" type="BooleanField">False</field>
+        <field name="title" type="CharField">Equashield beszerzése</field>
+        <field name="short_descr" type="TextField">Különböző Equashield termékeke beszerzése különböző hatóanyaggal, és kiszerelésben a dokumentációban részletezettek szerint, tekintettel arra, hogy az EKR rendszerbe a karakter korlátozás miatt a beszerzendő termékek és mennyiségek nem sorolhatók fel.
+A hivatalos nagykerereskedelmi árral rendelkező készítményeknél az ajánlati ár a nagykereskedelmi árnál magasabb nem lehet.
+A dokumetnáció mellékletét képező "Részletező ártáblázat" nevezetű dokumentációt kérjük maradéktalanul kitölteni, az ajánlatok összehasonlítása és bírálata ezen dokumentum alapján történik.
+SA-W SPIKE ADAPTOR W 1X 240 db
+SU-EZ60/2 60 ML SYRINGE UNIT 1X 330 db
+VA-20C/2 VIAL ADAPTOR 20 MM FOR CONCAVE VIAL STOPPER 1x 500 db
+SU-10 10 ML SYRINGE UNIT 1X 580 db
+SU-35 35 ML SYRINGE UNIT 1X 1700 db
+VA-20 VIAL ADAPTOR 20 MM 1X 5000 db
+FC-1 FEMALE LUER LOCK CONNECTOR 1X 5280 db
+LL-1 LUER LOCK ADAPTOR 1X 5880 db
+SA-1 SPIKE ADAPTOR 1X 8880 db
+Syringe Unit 10ml 17 db
+Syringe Unit 35ml 792 db
+Vial Adaptor 20 mm 2117 db
+Vial Adaptor 20Cmm 42 db
+Spike Adaptor 5504 db
+Spike Adaptor W 29 db
+Female Luer lock connector 4036 db
+Luer Lock Adaptor 3883 db</field>
+        <field name="info_add" type="TextField"></field>
+        <field name="conclusion_date" type="DateField"><None></None></field>
+        <field name="contractor_name" type="CharField"><None></None></field>
+        <field name="contractor_country" rel="ManyToOneRel" to="tenders.country"><None></None></field>
+        <field name="value" type="DecimalField"><None></None></field>
+        <field name="currency" rel="ManyToOneRel" to="tenders.currency"><None></None></field>
+        <field name="value_estimated" type="BooleanField">False</field>
+        <field name="number_of_units" type="PositiveIntegerField"><None></None></field>
+        <field name="value_per_unit" type="DecimalField"><None></None></field>
+        <field name="search_vector" type="SearchVectorField"><None></None></field>
+    </object>
+</django-objects>

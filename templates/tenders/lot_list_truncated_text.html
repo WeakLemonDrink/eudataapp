@@ -1,0 +1,11 @@
+{% if value %}
+	{% if value|wordcount > 7 %}
+		<span data-toggle="tooltip" data-placement="top" title="{{value}}">
+	{% else %}
+		<span>
+	{% endif %}
+	{{value|truncatewords:7}}
+		</span>
+{% else %}
+	—
+{% endif %}

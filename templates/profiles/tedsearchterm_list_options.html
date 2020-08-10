@@ -1,0 +1,8 @@
+<div class="btn-group">
+  <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+  <div class="dropdown-menu">
+  	<a class="dropdown-item" href="{% url 'profiles:ted_search_term_update' record.id %}?field=send_notifications">Turn notifications {% if record.send_notifications %}OFF{% else %}ON{% endif %}</a>
+  	<a class="dropdown-item" href="{% url 'profiles:ted_search_term_update' record.id %}?field=is_active">Set {% if record.is_active %}INACTIVE{% else %}ACTIVE{% endif %}</a>  	
+	<a class="dropdown-item" href="{% url 'profiles:tedsearchterm-delete' record.id %}">Delete</a>	
+  </div>
+</div>

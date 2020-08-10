@@ -1,0 +1,1253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+    <object model="tenders.country" pk="1">
+        <field name="iso_code" type="CharField">AF</field>
+        <field name="country_name" type="CharField">Afghanistan</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="2">
+        <field name="iso_code" type="CharField">AX</field>
+        <field name="country_name" type="CharField">Åland Islands</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="3">
+        <field name="iso_code" type="CharField">AL</field>
+        <field name="country_name" type="CharField">Albania</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="4">
+        <field name="iso_code" type="CharField">DZ</field>
+        <field name="country_name" type="CharField">Algeria</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="5">
+        <field name="iso_code" type="CharField">AS</field>
+        <field name="country_name" type="CharField">American Samoa</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="6">
+        <field name="iso_code" type="CharField">AD</field>
+        <field name="country_name" type="CharField">Andorra</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="7">
+        <field name="iso_code" type="CharField">AO</field>
+        <field name="country_name" type="CharField">Angola</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="8">
+        <field name="iso_code" type="CharField">AI</field>
+        <field name="country_name" type="CharField">Anguilla</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="9">
+        <field name="iso_code" type="CharField">AQ</field>
+        <field name="country_name" type="CharField">Antarctica</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="10">
+        <field name="iso_code" type="CharField">AG</field>
+        <field name="country_name" type="CharField">Antigua and Barbuda</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="11">
+        <field name="iso_code" type="CharField">AR</field>
+        <field name="country_name" type="CharField">Argentina</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="12">
+        <field name="iso_code" type="CharField">AM</field>
+        <field name="country_name" type="CharField">Armenia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="13">
+        <field name="iso_code" type="CharField">AW</field>
+        <field name="country_name" type="CharField">Aruba</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="14">
+        <field name="iso_code" type="CharField">AU</field>
+        <field name="country_name" type="CharField">Australia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="15">
+        <field name="iso_code" type="CharField">AT</field>
+        <field name="country_name" type="CharField">Austria</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="16">
+        <field name="iso_code" type="CharField">AZ</field>
+        <field name="country_name" type="CharField">Azerbaijan</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="17">
+        <field name="iso_code" type="CharField">BS</field>
+        <field name="country_name" type="CharField">Bahamas</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="18">
+        <field name="iso_code" type="CharField">BH</field>
+        <field name="country_name" type="CharField">Bahrain</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="19">
+        <field name="iso_code" type="CharField">BD</field>
+        <field name="country_name" type="CharField">Bangladesh</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="20">
+        <field name="iso_code" type="CharField">BB</field>
+        <field name="country_name" type="CharField">Barbados</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="21">
+        <field name="iso_code" type="CharField">BY</field>
+        <field name="country_name" type="CharField">Belarus</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="22">
+        <field name="iso_code" type="CharField">BE</field>
+        <field name="country_name" type="CharField">Belgium</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="23">
+        <field name="iso_code" type="CharField">BZ</field>
+        <field name="country_name" type="CharField">Belize</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="24">
+        <field name="iso_code" type="CharField">BJ</field>
+        <field name="country_name" type="CharField">Benin</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="25">
+        <field name="iso_code" type="CharField">BM</field>
+        <field name="country_name" type="CharField">Bermuda</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="26">
+        <field name="iso_code" type="CharField">BT</field>
+        <field name="country_name" type="CharField">Bhutan</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="27">
+        <field name="iso_code" type="CharField">BO</field>
+        <field name="country_name" type="CharField">Bolivia (Plurinational State of)</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="28">
+        <field name="iso_code" type="CharField">BQ</field>
+        <field name="country_name" type="CharField">Bonaire, Sint Eustatius and Saba</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="29">
+        <field name="iso_code" type="CharField">BA</field>
+        <field name="country_name" type="CharField">Bosnia and Herzegovina</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="30">
+        <field name="iso_code" type="CharField">BW</field>
+        <field name="country_name" type="CharField">Botswana</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="31">
+        <field name="iso_code" type="CharField">BV</field>
+        <field name="country_name" type="CharField">Bouvet Island</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="32">
+        <field name="iso_code" type="CharField">BR</field>
+        <field name="country_name" type="CharField">Brazil</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="33">
+        <field name="iso_code" type="CharField">IO</field>
+        <field name="country_name" type="CharField">British Indian Ocean Territory</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="34">
+        <field name="iso_code" type="CharField">BN</field>
+        <field name="country_name" type="CharField">Brunei Darussalam</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="35">
+        <field name="iso_code" type="CharField">BG</field>
+        <field name="country_name" type="CharField">Bulgaria</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="36">
+        <field name="iso_code" type="CharField">BF</field>
+        <field name="country_name" type="CharField">Burkina Faso</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="37">
+        <field name="iso_code" type="CharField">BI</field>
+        <field name="country_name" type="CharField">Burundi</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="38">
+        <field name="iso_code" type="CharField">CV</field>
+        <field name="country_name" type="CharField">Cabo Verde</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="39">
+        <field name="iso_code" type="CharField">KH</field>
+        <field name="country_name" type="CharField">Cambodia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="40">
+        <field name="iso_code" type="CharField">CM</field>
+        <field name="country_name" type="CharField">Cameroon</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="41">
+        <field name="iso_code" type="CharField">CA</field>
+        <field name="country_name" type="CharField">Canada</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="42">
+        <field name="iso_code" type="CharField">KY</field>
+        <field name="country_name" type="CharField">Cayman Islands</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="43">
+        <field name="iso_code" type="CharField">CF</field>
+        <field name="country_name" type="CharField">Central African Republic</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="44">
+        <field name="iso_code" type="CharField">TD</field>
+        <field name="country_name" type="CharField">Chad</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="45">
+        <field name="iso_code" type="CharField">CL</field>
+        <field name="country_name" type="CharField">Chile</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="46">
+        <field name="iso_code" type="CharField">CN</field>
+        <field name="country_name" type="CharField">China</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="47">
+        <field name="iso_code" type="CharField">CX</field>
+        <field name="country_name" type="CharField">Christmas Island</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="48">
+        <field name="iso_code" type="CharField">CC</field>
+        <field name="country_name" type="CharField">Cocos (Keeling) Islands</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="49">
+        <field name="iso_code" type="CharField">CO</field>
+        <field name="country_name" type="CharField">Colombia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="50">
+        <field name="iso_code" type="CharField">KM</field>
+        <field name="country_name" type="CharField">Comoros</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="51">
+        <field name="iso_code" type="CharField">CG</field>
+        <field name="country_name" type="CharField">Congo</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="52">
+        <field name="iso_code" type="CharField">CD</field>
+        <field name="country_name" type="CharField">Congo, Democratic Republic of the</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="53">
+        <field name="iso_code" type="CharField">CK</field>
+        <field name="country_name" type="CharField">Cook Islands</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="54">
+        <field name="iso_code" type="CharField">CR</field>
+        <field name="country_name" type="CharField">Costa Rica</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="55">
+        <field name="iso_code" type="CharField">CI</field>
+        <field name="country_name" type="CharField">Côte d'Ivoire</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="56">
+        <field name="iso_code" type="CharField">HR</field>
+        <field name="country_name" type="CharField">Croatia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="57">
+        <field name="iso_code" type="CharField">CU</field>
+        <field name="country_name" type="CharField">Cuba</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="58">
+        <field name="iso_code" type="CharField">CW</field>
+        <field name="country_name" type="CharField">Curaçao</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="59">
+        <field name="iso_code" type="CharField">CY</field>
+        <field name="country_name" type="CharField">Cyprus</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="60">
+        <field name="iso_code" type="CharField">CZ</field>
+        <field name="country_name" type="CharField">Czechia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="61">
+        <field name="iso_code" type="CharField">DK</field>
+        <field name="country_name" type="CharField">Denmark</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="62">
+        <field name="iso_code" type="CharField">DJ</field>
+        <field name="country_name" type="CharField">Djibouti</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="63">
+        <field name="iso_code" type="CharField">DM</field>
+        <field name="country_name" type="CharField">Dominica</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="64">
+        <field name="iso_code" type="CharField">DO</field>
+        <field name="country_name" type="CharField">Dominican Republic</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="65">
+        <field name="iso_code" type="CharField">EC</field>
+        <field name="country_name" type="CharField">Ecuador</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="66">
+        <field name="iso_code" type="CharField">EG</field>
+        <field name="country_name" type="CharField">Egypt</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="67">
+        <field name="iso_code" type="CharField">SV</field>
+        <field name="country_name" type="CharField">El Salvador</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="68">
+        <field name="iso_code" type="CharField">GQ</field>
+        <field name="country_name" type="CharField">Equatorial Guinea</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="69">
+        <field name="iso_code" type="CharField">ER</field>
+        <field name="country_name" type="CharField">Eritrea</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="70">
+        <field name="iso_code" type="CharField">EE</field>
+        <field name="country_name" type="CharField">Estonia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="71">
+        <field name="iso_code" type="CharField">SZ</field>
+        <field name="country_name" type="CharField">Eswatini</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="72">
+        <field name="iso_code" type="CharField">ET</field>
+        <field name="country_name" type="CharField">Ethiopia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="73">
+        <field name="iso_code" type="CharField">FK</field>
+        <field name="country_name" type="CharField">Falkland Islands (Malvinas)</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="74">
+        <field name="iso_code" type="CharField">FO</field>
+        <field name="country_name" type="CharField">Faroe Islands</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="75">
+        <field name="iso_code" type="CharField">FJ</field>
+        <field name="country_name" type="CharField">Fiji</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="76">
+        <field name="iso_code" type="CharField">FI</field>
+        <field name="country_name" type="CharField">Finland</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="77">
+        <field name="iso_code" type="CharField">FR</field>
+        <field name="country_name" type="CharField">France</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="78">
+        <field name="iso_code" type="CharField">GF</field>
+        <field name="country_name" type="CharField">French Guiana</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="79">
+        <field name="iso_code" type="CharField">PF</field>
+        <field name="country_name" type="CharField">French Polynesia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="80">
+        <field name="iso_code" type="CharField">TF</field>
+        <field name="country_name" type="CharField">French Southern Territories</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="81">
+        <field name="iso_code" type="CharField">GA</field>
+        <field name="country_name" type="CharField">Gabon</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="82">
+        <field name="iso_code" type="CharField">GM</field>
+        <field name="country_name" type="CharField">Gambia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="83">
+        <field name="iso_code" type="CharField">GE</field>
+        <field name="country_name" type="CharField">Georgia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="84">
+        <field name="iso_code" type="CharField">DE</field>
+        <field name="country_name" type="CharField">Germany</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="85">
+        <field name="iso_code" type="CharField">GH</field>
+        <field name="country_name" type="CharField">Ghana</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="86">
+        <field name="iso_code" type="CharField">GI</field>
+        <field name="country_name" type="CharField">Gibraltar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="87">
+        <field name="iso_code" type="CharField">GR</field>
+        <field name="country_name" type="CharField">Greece</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="88">
+        <field name="iso_code" type="CharField">GL</field>
+        <field name="country_name" type="CharField">Greenland</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="89">
+        <field name="iso_code" type="CharField">GD</field>
+        <field name="country_name" type="CharField">Grenada</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="90">
+        <field name="iso_code" type="CharField">GP</field>
+        <field name="country_name" type="CharField">Guadeloupe</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="91">
+        <field name="iso_code" type="CharField">GU</field>
+        <field name="country_name" type="CharField">Guam</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="92">
+        <field name="iso_code" type="CharField">GT</field>
+        <field name="country_name" type="CharField">Guatemala</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="93">
+        <field name="iso_code" type="CharField">GG</field>
+        <field name="country_name" type="CharField">Guernsey</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="94">
+        <field name="iso_code" type="CharField">GN</field>
+        <field name="country_name" type="CharField">Guinea</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="95">
+        <field name="iso_code" type="CharField">GW</field>
+        <field name="country_name" type="CharField">Guinea-Bissau</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="96">
+        <field name="iso_code" type="CharField">GY</field>
+        <field name="country_name" type="CharField">Guyana</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="97">
+        <field name="iso_code" type="CharField">HT</field>
+        <field name="country_name" type="CharField">Haiti</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="98">
+        <field name="iso_code" type="CharField">HM</field>
+        <field name="country_name" type="CharField">Heard Island and McDonald Islands</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="99">
+        <field name="iso_code" type="CharField">VA</field>
+        <field name="country_name" type="CharField">Holy See</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="100">
+        <field name="iso_code" type="CharField">HN</field>
+        <field name="country_name" type="CharField">Honduras</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="101">
+        <field name="iso_code" type="CharField">HK</field>
+        <field name="country_name" type="CharField">Hong Kong</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="102">
+        <field name="iso_code" type="CharField">HU</field>
+        <field name="country_name" type="CharField">Hungary</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="103">
+        <field name="iso_code" type="CharField">IS</field>
+        <field name="country_name" type="CharField">Iceland</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="104">
+        <field name="iso_code" type="CharField">IN</field>
+        <field name="country_name" type="CharField">India</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="105">
+        <field name="iso_code" type="CharField">ID</field>
+        <field name="country_name" type="CharField">Indonesia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="106">
+        <field name="iso_code" type="CharField">IR</field>
+        <field name="country_name" type="CharField">Iran (Islamic Republic of)</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="107">
+        <field name="iso_code" type="CharField">IQ</field>
+        <field name="country_name" type="CharField">Iraq</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="108">
+        <field name="iso_code" type="CharField">IE</field>
+        <field name="country_name" type="CharField">Ireland</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="109">
+        <field name="iso_code" type="CharField">IM</field>
+        <field name="country_name" type="CharField">Isle of Man</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="110">
+        <field name="iso_code" type="CharField">IL</field>
+        <field name="country_name" type="CharField">Israel</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="111">
+        <field name="iso_code" type="CharField">IT</field>
+        <field name="country_name" type="CharField">Italy</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="112">
+        <field name="iso_code" type="CharField">JM</field>
+        <field name="country_name" type="CharField">Jamaica</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="113">
+        <field name="iso_code" type="CharField">JP</field>
+        <field name="country_name" type="CharField">Japan</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="114">
+        <field name="iso_code" type="CharField">JE</field>
+        <field name="country_name" type="CharField">Jersey</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="115">
+        <field name="iso_code" type="CharField">JO</field>
+        <field name="country_name" type="CharField">Jordan</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="116">
+        <field name="iso_code" type="CharField">KZ</field>
+        <field name="country_name" type="CharField">Kazakhstan</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="117">
+        <field name="iso_code" type="CharField">KE</field>
+        <field name="country_name" type="CharField">Kenya</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="118">
+        <field name="iso_code" type="CharField">KI</field>
+        <field name="country_name" type="CharField">Kiribati</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="119">
+        <field name="iso_code" type="CharField">KP</field>
+        <field name="country_name" type="CharField">Korea (Democratic People's Republic of)</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="120">
+        <field name="iso_code" type="CharField">KR</field>
+        <field name="country_name" type="CharField">Korea, Republic of</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="121">
+        <field name="iso_code" type="CharField">KW</field>
+        <field name="country_name" type="CharField">Kuwait</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="122">
+        <field name="iso_code" type="CharField">KG</field>
+        <field name="country_name" type="CharField">Kyrgyzstan</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="123">
+        <field name="iso_code" type="CharField">LA</field>
+        <field name="country_name" type="CharField">Lao People's Democratic Republic</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="124">
+        <field name="iso_code" type="CharField">LV</field>
+        <field name="country_name" type="CharField">Latvia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="125">
+        <field name="iso_code" type="CharField">LB</field>
+        <field name="country_name" type="CharField">Lebanon</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="126">
+        <field name="iso_code" type="CharField">LS</field>
+        <field name="country_name" type="CharField">Lesotho</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="127">
+        <field name="iso_code" type="CharField">LR</field>
+        <field name="country_name" type="CharField">Liberia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="128">
+        <field name="iso_code" type="CharField">LY</field>
+        <field name="country_name" type="CharField">Libya</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="129">
+        <field name="iso_code" type="CharField">LI</field>
+        <field name="country_name" type="CharField">Liechtenstein</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="130">
+        <field name="iso_code" type="CharField">LT</field>
+        <field name="country_name" type="CharField">Lithuania</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="131">
+        <field name="iso_code" type="CharField">LU</field>
+        <field name="country_name" type="CharField">Luxembourg</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="132">
+        <field name="iso_code" type="CharField">MO</field>
+        <field name="country_name" type="CharField">Macao</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="133">
+        <field name="iso_code" type="CharField">MG</field>
+        <field name="country_name" type="CharField">Madagascar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="134">
+        <field name="iso_code" type="CharField">MW</field>
+        <field name="country_name" type="CharField">Malawi</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="135">
+        <field name="iso_code" type="CharField">MY</field>
+        <field name="country_name" type="CharField">Malaysia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="136">
+        <field name="iso_code" type="CharField">MV</field>
+        <field name="country_name" type="CharField">Maldives</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="137">
+        <field name="iso_code" type="CharField">ML</field>
+        <field name="country_name" type="CharField">Mali</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="138">
+        <field name="iso_code" type="CharField">MT</field>
+        <field name="country_name" type="CharField">Malta</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="139">
+        <field name="iso_code" type="CharField">MH</field>
+        <field name="country_name" type="CharField">Marshall Islands</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="140">
+        <field name="iso_code" type="CharField">MQ</field>
+        <field name="country_name" type="CharField">Martinique</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="141">
+        <field name="iso_code" type="CharField">MR</field>
+        <field name="country_name" type="CharField">Mauritania</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="142">
+        <field name="iso_code" type="CharField">MU</field>
+        <field name="country_name" type="CharField">Mauritius</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="143">
+        <field name="iso_code" type="CharField">YT</field>
+        <field name="country_name" type="CharField">Mayotte</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="144">
+        <field name="iso_code" type="CharField">MX</field>
+        <field name="country_name" type="CharField">Mexico</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="145">
+        <field name="iso_code" type="CharField">FM</field>
+        <field name="country_name" type="CharField">Micronesia (Federated States of)</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="146">
+        <field name="iso_code" type="CharField">MD</field>
+        <field name="country_name" type="CharField">Moldova, Republic of</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="147">
+        <field name="iso_code" type="CharField">MC</field>
+        <field name="country_name" type="CharField">Monaco</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="148">
+        <field name="iso_code" type="CharField">MN</field>
+        <field name="country_name" type="CharField">Mongolia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="149">
+        <field name="iso_code" type="CharField">ME</field>
+        <field name="country_name" type="CharField">Montenegro</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="150">
+        <field name="iso_code" type="CharField">MS</field>
+        <field name="country_name" type="CharField">Montserrat</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="151">
+        <field name="iso_code" type="CharField">MA</field>
+        <field name="country_name" type="CharField">Morocco</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="152">
+        <field name="iso_code" type="CharField">MZ</field>
+        <field name="country_name" type="CharField">Mozambique</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="153">
+        <field name="iso_code" type="CharField">MM</field>
+        <field name="country_name" type="CharField">Myanmar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="154">
+        <field name="iso_code" type="CharField">NA</field>
+        <field name="country_name" type="CharField">Namibia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="155">
+        <field name="iso_code" type="CharField">NR</field>
+        <field name="country_name" type="CharField">Nauru</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="156">
+        <field name="iso_code" type="CharField">NP</field>
+        <field name="country_name" type="CharField">Nepal</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="157">
+        <field name="iso_code" type="CharField">NL</field>
+        <field name="country_name" type="CharField">Netherlands</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="158">
+        <field name="iso_code" type="CharField">NC</field>
+        <field name="country_name" type="CharField">New Caledonia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="159">
+        <field name="iso_code" type="CharField">NZ</field>
+        <field name="country_name" type="CharField">New Zealand</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="160">
+        <field name="iso_code" type="CharField">NI</field>
+        <field name="country_name" type="CharField">Nicaragua</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="161">
+        <field name="iso_code" type="CharField">NE</field>
+        <field name="country_name" type="CharField">Niger</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="162">
+        <field name="iso_code" type="CharField">NG</field>
+        <field name="country_name" type="CharField">Nigeria</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="163">
+        <field name="iso_code" type="CharField">NU</field>
+        <field name="country_name" type="CharField">Niue</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="164">
+        <field name="iso_code" type="CharField">NF</field>
+        <field name="country_name" type="CharField">Norfolk Island</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="165">
+        <field name="iso_code" type="CharField">MK</field>
+        <field name="country_name" type="CharField">North Macedonia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="166">
+        <field name="iso_code" type="CharField">MP</field>
+        <field name="country_name" type="CharField">Northern Mariana Islands</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="167">
+        <field name="iso_code" type="CharField">NO</field>
+        <field name="country_name" type="CharField">Norway</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="168">
+        <field name="iso_code" type="CharField">OM</field>
+        <field name="country_name" type="CharField">Oman</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="169">
+        <field name="iso_code" type="CharField">PK</field>
+        <field name="country_name" type="CharField">Pakistan</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="170">
+        <field name="iso_code" type="CharField">PW</field>
+        <field name="country_name" type="CharField">Palau</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="171">
+        <field name="iso_code" type="CharField">PS</field>
+        <field name="country_name" type="CharField">Palestine, State of</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="172">
+        <field name="iso_code" type="CharField">PA</field>
+        <field name="country_name" type="CharField">Panama</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="173">
+        <field name="iso_code" type="CharField">PG</field>
+        <field name="country_name" type="CharField">Papua New Guinea</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="174">
+        <field name="iso_code" type="CharField">PY</field>
+        <field name="country_name" type="CharField">Paraguay</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="175">
+        <field name="iso_code" type="CharField">PE</field>
+        <field name="country_name" type="CharField">Peru</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="176">
+        <field name="iso_code" type="CharField">PH</field>
+        <field name="country_name" type="CharField">Philippines</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="177">
+        <field name="iso_code" type="CharField">PN</field>
+        <field name="country_name" type="CharField">Pitcairn</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="178">
+        <field name="iso_code" type="CharField">PL</field>
+        <field name="country_name" type="CharField">Poland</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="179">
+        <field name="iso_code" type="CharField">PT</field>
+        <field name="country_name" type="CharField">Portugal</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="180">
+        <field name="iso_code" type="CharField">PR</field>
+        <field name="country_name" type="CharField">Puerto Rico</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="181">
+        <field name="iso_code" type="CharField">QA</field>
+        <field name="country_name" type="CharField">Qatar</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="182">
+        <field name="iso_code" type="CharField">RE</field>
+        <field name="country_name" type="CharField">Réunion</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="183">
+        <field name="iso_code" type="CharField">RO</field>
+        <field name="country_name" type="CharField">Romania</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="184">
+        <field name="iso_code" type="CharField">RU</field>
+        <field name="country_name" type="CharField">Russian Federation</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="185">
+        <field name="iso_code" type="CharField">RW</field>
+        <field name="country_name" type="CharField">Rwanda</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="186">
+        <field name="iso_code" type="CharField">BL</field>
+        <field name="country_name" type="CharField">Saint Barthélemy</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="187">
+        <field name="iso_code" type="CharField">SH</field>
+        <field name="country_name" type="CharField">Saint Helena, Ascension and Tristan da Cunha</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="188">
+        <field name="iso_code" type="CharField">KN</field>
+        <field name="country_name" type="CharField">Saint Kitts and Nevis</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="189">
+        <field name="iso_code" type="CharField">LC</field>
+        <field name="country_name" type="CharField">Saint Lucia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="190">
+        <field name="iso_code" type="CharField">MF</field>
+        <field name="country_name" type="CharField">Saint Martin (French part)</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="191">
+        <field name="iso_code" type="CharField">PM</field>
+        <field name="country_name" type="CharField">Saint Pierre and Miquelon</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="192">
+        <field name="iso_code" type="CharField">VC</field>
+        <field name="country_name" type="CharField">Saint Vincent and the Grenadines</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="193">
+        <field name="iso_code" type="CharField">WS</field>
+        <field name="country_name" type="CharField">Samoa</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="194">
+        <field name="iso_code" type="CharField">SM</field>
+        <field name="country_name" type="CharField">San Marino</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="195">
+        <field name="iso_code" type="CharField">ST</field>
+        <field name="country_name" type="CharField">Sao Tome and Principe</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="196">
+        <field name="iso_code" type="CharField">SA</field>
+        <field name="country_name" type="CharField">Saudi Arabia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="197">
+        <field name="iso_code" type="CharField">SN</field>
+        <field name="country_name" type="CharField">Senegal</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="198">
+        <field name="iso_code" type="CharField">RS</field>
+        <field name="country_name" type="CharField">Serbia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="199">
+        <field name="iso_code" type="CharField">SC</field>
+        <field name="country_name" type="CharField">Seychelles</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="200">
+        <field name="iso_code" type="CharField">SL</field>
+        <field name="country_name" type="CharField">Sierra Leone</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="201">
+        <field name="iso_code" type="CharField">SG</field>
+        <field name="country_name" type="CharField">Singapore</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="202">
+        <field name="iso_code" type="CharField">SX</field>
+        <field name="country_name" type="CharField">Sint Maarten (Dutch part)</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="203">
+        <field name="iso_code" type="CharField">SK</field>
+        <field name="country_name" type="CharField">Slovakia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="204">
+        <field name="iso_code" type="CharField">SI</field>
+        <field name="country_name" type="CharField">Slovenia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="205">
+        <field name="iso_code" type="CharField">SB</field>
+        <field name="country_name" type="CharField">Solomon Islands</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="206">
+        <field name="iso_code" type="CharField">SO</field>
+        <field name="country_name" type="CharField">Somalia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="207">
+        <field name="iso_code" type="CharField">ZA</field>
+        <field name="country_name" type="CharField">South Africa</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="208">
+        <field name="iso_code" type="CharField">GS</field>
+        <field name="country_name" type="CharField">South Georgia and the South Sandwich Islands</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="209">
+        <field name="iso_code" type="CharField">SS</field>
+        <field name="country_name" type="CharField">South Sudan</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="210">
+        <field name="iso_code" type="CharField">ES</field>
+        <field name="country_name" type="CharField">Spain</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="211">
+        <field name="iso_code" type="CharField">LK</field>
+        <field name="country_name" type="CharField">Sri Lanka</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="212">
+        <field name="iso_code" type="CharField">SD</field>
+        <field name="country_name" type="CharField">Sudan</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="213">
+        <field name="iso_code" type="CharField">SR</field>
+        <field name="country_name" type="CharField">Suriname</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="214">
+        <field name="iso_code" type="CharField">SJ</field>
+        <field name="country_name" type="CharField">Svalbard and Jan Mayen</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="215">
+        <field name="iso_code" type="CharField">SE</field>
+        <field name="country_name" type="CharField">Sweden</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="216">
+        <field name="iso_code" type="CharField">CH</field>
+        <field name="country_name" type="CharField">Switzerland</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="217">
+        <field name="iso_code" type="CharField">SY</field>
+        <field name="country_name" type="CharField">Syrian Arab Republic</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="218">
+        <field name="iso_code" type="CharField">TW</field>
+        <field name="country_name" type="CharField">Taiwan, Province of China</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="219">
+        <field name="iso_code" type="CharField">TJ</field>
+        <field name="country_name" type="CharField">Tajikistan</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="220">
+        <field name="iso_code" type="CharField">TZ</field>
+        <field name="country_name" type="CharField">Tanzania, United Republic of</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="221">
+        <field name="iso_code" type="CharField">TH</field>
+        <field name="country_name" type="CharField">Thailand</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="222">
+        <field name="iso_code" type="CharField">TL</field>
+        <field name="country_name" type="CharField">Timor-Leste</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="223">
+        <field name="iso_code" type="CharField">TG</field>
+        <field name="country_name" type="CharField">Togo</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="224">
+        <field name="iso_code" type="CharField">TK</field>
+        <field name="country_name" type="CharField">Tokelau</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="225">
+        <field name="iso_code" type="CharField">TO</field>
+        <field name="country_name" type="CharField">Tonga</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="226">
+        <field name="iso_code" type="CharField">TT</field>
+        <field name="country_name" type="CharField">Trinidad and Tobago</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="227">
+        <field name="iso_code" type="CharField">TN</field>
+        <field name="country_name" type="CharField">Tunisia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="228">
+        <field name="iso_code" type="CharField">TR</field>
+        <field name="country_name" type="CharField">Turkey</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="229">
+        <field name="iso_code" type="CharField">TM</field>
+        <field name="country_name" type="CharField">Turkmenistan</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="230">
+        <field name="iso_code" type="CharField">TC</field>
+        <field name="country_name" type="CharField">Turks and Caicos Islands</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="231">
+        <field name="iso_code" type="CharField">TV</field>
+        <field name="country_name" type="CharField">Tuvalu</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="232">
+        <field name="iso_code" type="CharField">UG</field>
+        <field name="country_name" type="CharField">Uganda</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="233">
+        <field name="iso_code" type="CharField">UA</field>
+        <field name="country_name" type="CharField">Ukraine</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="234">
+        <field name="iso_code" type="CharField">AE</field>
+        <field name="country_name" type="CharField">United Arab Emirates</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="235">
+        <field name="iso_code" type="CharField">GB</field>
+        <field name="country_name" type="CharField">United Kingdom of Great Britain and Northern Ireland</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="236">
+        <field name="iso_code" type="CharField">US</field>
+        <field name="country_name" type="CharField">United States of America</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="237">
+        <field name="iso_code" type="CharField">UM</field>
+        <field name="country_name" type="CharField">United States Minor Outlying Islands</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="238">
+        <field name="iso_code" type="CharField">UY</field>
+        <field name="country_name" type="CharField">Uruguay</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="239">
+        <field name="iso_code" type="CharField">UZ</field>
+        <field name="country_name" type="CharField">Uzbekistan</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="240">
+        <field name="iso_code" type="CharField">VU</field>
+        <field name="country_name" type="CharField">Vanuatu</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="241">
+        <field name="iso_code" type="CharField">VE</field>
+        <field name="country_name" type="CharField">Venezuela (Bolivarian Republic of)</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="242">
+        <field name="iso_code" type="CharField">VN</field>
+        <field name="country_name" type="CharField">Viet Nam</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="243">
+        <field name="iso_code" type="CharField">VG</field>
+        <field name="country_name" type="CharField">Virgin Islands (British)</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="244">
+        <field name="iso_code" type="CharField">VI</field>
+        <field name="country_name" type="CharField">Virgin Islands (U.S.)</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="245">
+        <field name="iso_code" type="CharField">WF</field>
+        <field name="country_name" type="CharField">Wallis and Futuna</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="246">
+        <field name="iso_code" type="CharField">EH</field>
+        <field name="country_name" type="CharField">Western Sahara</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="247">
+        <field name="iso_code" type="CharField">YE</field>
+        <field name="country_name" type="CharField">Yemen</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="248">
+        <field name="iso_code" type="CharField">ZM</field>
+        <field name="country_name" type="CharField">Zambia</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="249">
+        <field name="iso_code" type="CharField">ZW</field>
+        <field name="country_name" type="CharField">Zimbabwe</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+    <object model="tenders.country" pk="250">
+        <field name="iso_code" type="CharField">UK</field>
+        <field name="country_name" type="CharField">United Kingdom of Great Britain and Northern Ireland</field>
+        <field name="is_active" type="BooleanField">False</field>
+    </object>
+</django-objects>
